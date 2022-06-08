@@ -1,0 +1,504 @@
+{%- comment -%}
+In Prestige, the header is quite complex due to the very high number of possible combinations. If you have to edit it, please
+make sure to duplicate the theme first so you can revert your changes in case any issue is introduced.
+{%- endcomment -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+USEFUL VARIABLES
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- assign use_transparent_header = false -%}
+
+{%- if template == 'index' and section.settings.enable_transparent_header -%}
+  {%- assign use_transparent_header = true -%}
+{%- endif -%}
+
+{%- if template.name == 'collection' and section.settings.enable_transparent_header_collection and collection.image and collection.all_products_count > 0 and collection.template_suffix != 'no-image' -%}
+  {%- assign use_transparent_header = true -%}
+{%- endif -%}
+
+{%- if section.settings.navigation_style != 'sidebar' -%}
+  {%- assign use_sidebar_menu = false -%}
+{%- else -%}
+  {%- assign use_sidebar_menu = true -%}
+{%- endif -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+CURRENCY AND LANGUAGE SELECTORS
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
+  {%- assign country_selector = true -%}
+{%- endif -%}
+
+{%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
+  {%- assign locale_selector = true -%}
+{%- endif -%}
+
+{%- if locale_selector or country_selector -%}
+  {%- capture localization_form -%}
+    {%- form 'localization', id: 'localization_form_header', class: 'Header__LocalizationForm hidden-pocket hidden-lap' -%}
+      <div class="HorizontalList HorizontalList--spacingLoose">
+        {%- if country_selector -%}
+          <div class="HorizontalList__Item">
+            <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+            <span class="u-visually-hidden">{{ 'header.general.country' | t }}</span>
+
+            <button type="button" class="SelectButton Link Link--primary u-h8" aria-haspopup="true" aria-expanded="false" aria-controls="header-currency-popover">
+              {{- localization.country.name }} ({{ localization.country.currency.iso_code }} {% if localization.country.currency.symbol %}{{ localization.country.currency.symbol }}{%- endif -%})
+              {%- render 'icon', icon: 'select-arrow' -%}
+            </button>
+
+            <div id="header-currency-popover" class="Popover Popover--small Popover--noWrap" aria-hidden="true">
+              <header class="Popover__Header">
+                <button type="button" class="Popover__Close Icon-Wrapper--clickable" data-action="close-popover">{% render 'icon' with 'close' %}</button>
+                <span class="Popover__Title Heading u-h4">{{ 'header.general.country' | t }}</span>
+              </header>
+
+              <div class="Popover__Content">
+                <div class="Popover__ValueList Popover__ValueList--center" data-scrollable>
+                  {%- for country in localization.available_countries -%}
+                    <button type="submit" name="country_code" class="Popover__Value {% if country.iso_code == localization.country.iso_code %}is-selected{% endif %} Heading Link Link--primary u-h6"  value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}aria-current="true"{% endif %}>
+                      {{- country.name }} ({{ country.currency.iso_code }} {% if country.currency.symbol %}{{ country.currency.symbol }}{%- endif -%})
+                    </button>
+                  {%- endfor -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+
+        {%- if locale_selector -%}
+          <div class="HorizontalList__Item">
+            <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
+            <span class="u-visually-hidden">{{ 'header.general.locale' | t }}</span>
+
+            <button type="button" class="SelectButton Link Link--primary u-h8" aria-haspopup="true" aria-expanded="false" aria-controls="header-locale-popover">
+              {{- localization.language.endonym_name | capitalize -}}
+              {%- render 'icon', icon: 'select-arrow' -%}
+            </button>
+
+            <div id="header-locale-popover" class="Popover Popover--small Popover--noWrap" aria-hidden="true">
+              <header class="Popover__Header">
+                <button type="button" class="Popover__Close Icon-Wrapper--clickable" data-action="close-popover">{% render 'icon' with 'close' %}</button>
+                <span class="Popover__Title Heading u-h4">{{ 'header.general.locale' | t }}</span>
+              </header>
+
+              <div class="Popover__Content">
+                <div class="Popover__ValueList Popover__ValueList--center" data-scrollable>
+                  {%- for language in localization.available_languages -%}
+                    <button type="submit" name="locale_code" class="Popover__Value {% if language.iso_code == localization.language.iso_code %}is-selected{% endif %} Heading Link Link--primary u-h6" value="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %}aria-current="true"{% endif %}>
+                      {{- language.endonym_name | capitalize -}}
+                    </button>
+                  {%- endfor -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endform -%}
+  {%- endcapture -%}
+{%- endif -%}
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+SEARCH FORM (implemented as a modal)
+
+Implementation note: make sure that the Search div is always just before the Header element, as the CSS uses
+                     this assumption
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+<div id="Search" class="Search" aria-hidden="true">
+  <div class="Search__Inner">
+    <div class="Search__SearchBar">
+      <form action="{{ routes.search_url }}" name="GET" role="search" class="Search__Form">
+        <div class="Search__InputIconWrapper">
+          <span class="hidden-tablet-and-up">{%- render 'icon' with 'search' -%}</span>
+          <span class="hidden-phone">{%- render 'icon' with 'search-desktop' -%}</span>
+        </div>
+
+        <input type="search" class="Search__Input Heading" name="q" autocomplete="off" autocorrect="off" autocapitalize="off" aria-label="{{ 'search.general.input_placeholder' | t }}" placeholder="{{ 'search.general.input_placeholder' | t }}" autofocus>
+        <input type="hidden" name="type" value="product">
+      </form>
+
+      <button class="Search__Close Link Link--primary" data-action="close-search" aria-label="{{ 'header.navigation.close_search' | t }}">{% render 'icon' with 'close' %}</button>
+    </div>
+
+    <div class="Search__Results" aria-hidden="true">
+      {%- if settings.search_mode != 'product' -%}
+        <div class="PageLayout PageLayout--breakLap">
+          <div class="PageLayout__Section"></div>
+          <div class="PageLayout__Section PageLayout__Section--secondary"></div>
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{%- comment -%}
+--------------------------------------------------------------------------------------------------------------------
+HEADER CONTENT
+--------------------------------------------------------------------------------------------------------------------
+{%- endcomment -%}
+
+{%- capture section_settings -%}
+{
+  "navigationStyle": {{ section.settings.navigation_style | json }},
+  "hasTransparentHeader": {% if use_transparent_header %}true{% else %}false{% endif %},
+  "isSticky": {% if section.settings.use_sticky_header %}true{% else %}false{% endif %}
+}
+{%- endcapture -%}
+
+<header id="section-{{ section.id }}"
+        class="Header Header--{{ section.settings.navigation_style }} {% if section.settings.navigation_style != 'inline' and section.settings.navigation_style != 'logoLeft' %}Header--initialized{% endif %} {% if use_transparent_header %}Header--transparent{% endif %} {% if section.settings.show_icons or section.settings.navigation_style == 'sidebar' %}Header--withIcons{% endif %}"
+        data-section-id="{{ section.id }}"
+        data-section-type="header"
+        data-section-settings='{{ section_settings }}'
+        role="banner">
+
+  <div class="header_wrapper">
+
+    <div class="header_top_row">
+      <a class="header_link desktop" href="/blogs/stories">STORIES</a>
+
+      <button class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless use_sidebar_menu %}hidden-desk{% endunless %} mobile" aria-expanded="false" data-action="open-drawer" data-drawer-id="sidebar-menu" aria-label="{{ 'header.navigation.open_sidebar' | t }}">
+        <span class="header_link hidden-tablet-and-up">MENU</span>
+        <span class="header_link hidden-phone">MENU</span>
+      </button>
+
+
+      <a class="header_link logo_header" href="/">
+        <img src="{{ 'redmilk_white_logo.svg' | asset_url }}" />
+      </a>
+      <a class="header_link desktop" href="#">RMK STUDIO</a>
+
+      {%- unless section.settings.show_icons or use_sidebar_menu -%}
+        <a href="{{ routes.cart_url }}" class="header_link mobile" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} (<span class="Header__CartCount">{{ cart.item_count }}</span>)</a>
+      {%- endunless -%}
+
+    </div>
+
+    <div class="header_bottom_row">
+      <div class="header_bottom_left">
+        <a class="header_link desktop" href="/collections/all">SHOP</a>
+        <span class="separator desktop"> / </span>
+        {%- unless section.settings.show_icons or use_sidebar_menu -%}
+          <a href="{{ routes.cart_url }}" class="header_link desktop" {% unless template == 'cart' or settings.cart_type == 'page' %}data-action="open-drawer" data-drawer-id="sidebar-cart" aria-label="{{ 'header.navigation.open_cart' | t }}"{% endunless %}>{{ 'header.navigation.cart' | t }} (<span class="Header__CartCount">{{ cart.item_count }}</span>)</a>
+        {%- endunless -%}
+      </div>
+
+      <a class="header_link desktop" href="/pages/contact">CONTACTS</a>
+    </div>
+
+
+
+    {%- capture header_logo -%}
+      <a href="{{ routes.root_url }}" class="Header__LogoLink">
+        {%- if section.settings.logo != blank -%}
+          {%- capture image_size -%}{{ section.settings.logo_max_width }}x{%- endcapture -%}
+
+          <img class="Header__LogoImage Header__LogoImage--primary"
+               src="{{ section.settings.logo | img_url: image_size }}"
+               srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+               width="{{ section.settings.logo.width }}"
+               height="{{ section.settings.logo.height }}"
+               alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+
+          {%- if use_transparent_header and section.settings.transparent_logo != blank -%}
+            <img class="Header__LogoImage Header__LogoImage--transparent"
+                 src="{{ section.settings.transparent_logo | img_url: image_size }}"
+                 srcset="{{ section.settings.transparent_logo | img_url: image_size }} 1x, {{ section.settings.transparent_logo | img_url: image_size, scale: 2 }} 2x"
+                 width="{{ section.settings.logo.width }}"
+                 height="{{ section.settings.logo.height }}"
+                 alt="{{ section.settings.transparent_logo.alt | default: shop.name | escape }}">
+          {%- endif -%}
+        {%- else -%}
+          <span class="Heading u-h4">{{ shop.name }}</span>
+        {%- endif -%}
+      </a>
+    {%- endcapture -%}
+
+
+
+  </div>
+
+
+</header>
+
+<style>
+  {%- if section.settings.use_sticky_header -%}
+    :root {
+      --use-sticky-header: 1;
+      --use-unsticky-header: 0;
+    }
+
+    .shopify-section--header {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  {%- else -%}
+    :root {
+      --use-sticky-header: 0;
+      --use-unsticky-header: 1;
+    }
+  {%- endif -%}
+
+  {%- if section.settings.logo -%}
+    .Header__LogoImage {
+      max-width: {{ section.settings.logo_max_width }}px;
+    }
+
+    @media screen and (max-width: 640px) {
+      .Header__LogoImage {
+        max-width: {{ section.settings.mobile_logo_max_width }}px;
+      }
+    }
+  {%- endif -%}
+
+  {%- if use_transparent_header -%}
+    :root {
+      --header-is-not-transparent: 0;
+      --header-is-transparent: 1;
+    }
+
+    .shopify-section--header {
+      margin-bottom: calc(-1 * var(--header-height));
+    }
+
+    .supports-sticky .Search[aria-hidden="true"] + .Header--transparent {
+      {%- if section.settings.show_transparent_header_border -%}
+        box-shadow: 0 -1px {{ section.settings.transparent_text_color | color_modify: 'alpha', 0.25 }} inset;
+      {%- else -%}
+        box-shadow: none;
+      {%- endif -%}
+
+      color: {{ section.settings.transparent_text_color }};
+    }
+  {%- else -%}
+    :root {
+      --header-is-not-transparent: 1;
+      --header-is-transparent: 0;
+    }
+  {%- endif -%}
+</style>
+
+<script>
+  document.documentElement.style.setProperty('--header-height', document.getElementById('shopify-section-header').offsetHeight + 'px');
+</script>
+
+{% schema %}
+{
+  "name": "Header",
+  "class": "shopify-section--header",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "use_sticky_header",
+      "label": "Use sticky header",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Image",
+      "info": "200 x 60px .png recommended"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "min": 50,
+      "max": 350,
+      "step": 5,
+      "unit": "px",
+      "label": "Image width",
+      "default": 140
+    },
+    {
+      "type": "range",
+      "id": "mobile_logo_max_width",
+      "min": 50,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile image width",
+      "default": 90
+    },
+    {
+      "type": "header",
+      "content": "Country/region selector",
+      "info": "To add a country/region, go to your [currency settings.](/admin/settings/payments)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_country_selector",
+      "label": "Show country/region selector",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Language selector",
+      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "Show language selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "link_list",
+      "id": "navigation_menu",
+      "label": "Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "select",
+      "id": "navigation_style",
+      "label": "Navigation style",
+      "info": "Setting will default to center style if screen width cannot fit all the links.",
+      "options": [
+        {
+          "value": "sidebar",
+          "label": "Sidebar"
+        },
+        {
+          "value": "inline",
+          "label": "Inline"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "logoLeft",
+          "label": "Logo left"
+        }
+      ],
+      "default": "inline"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_icons",
+      "label": "Show icons",
+      "info": "Text for account, search and cart are replaced by icons on desktop.",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Transparent header"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_transparent_header",
+      "label": "Enable on homepage",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_transparent_header_collection",
+      "label": "Enable on collection pages",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_transparent_header_border",
+      "label": "Show separation border",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "transparent_text_color",
+      "label": "Text/icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "transparent_logo",
+      "label": "Logo image",
+      "info": "200 x 60px .png recommended"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "mega_menu",
+      "name": "Mega menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "navigation_mega_menu",
+          "label": "Menu item",
+          "info": "Enter menu item to apply a mega menu dropdown. [Learn more](http://support.maestrooo.com/article/149-navigation-enabling-and-configuring-mega-menu)."
+        },
+        {
+          "type": "header",
+          "content": "Image push 1"
+        },
+        {
+          "type": "image_picker",
+          "id": "push_1_image",
+          "label": "Image",
+          "info": "740 x 460 px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "push_1_heading",
+          "label": "Heading",
+          "default": "Example heading"
+        },
+        {
+          "type": "text",
+          "id": "push_1_subheading",
+          "label": "Sub-heading",
+          "default": "Example sub-heading"
+        },
+        {
+          "type": "url",
+          "id": "push_1_url",
+          "label": "Link"
+        },
+        {
+          "type": "header",
+          "content": "Image push 2"
+        },
+        {
+          "type": "image_picker",
+          "id": "push_2_image",
+          "label": "Image",
+          "info": "740 x 460 px .jpg recommended"
+        },
+        {
+          "type": "text",
+          "id": "push_2_heading",
+          "label": "Heading",
+          "default": "Example heading"
+        },
+        {
+          "type": "text",
+          "id": "push_2_subheading",
+          "label": "Sub-heading",
+          "default": "Example sub-heading"
+        },
+        {
+          "type": "url",
+          "id": "push_2_url",
+          "label": "Link"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

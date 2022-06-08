@@ -1,0 +1,112 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero__2.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "slide-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "slide-0"
+      ],
+      "settings": {
+        "show_fullscreen": true,
+        "show_arrow": false,
+        "autoplay": false,
+        "cycle_speed": 8,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "165122213783eafc33": {
+      "type": "featured-collections",
+      "blocks": {
+        "1651222137967d8d65-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "home-collection",
+            "title": "SHOP",
+            "grid_items_count": 5,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1651222137967d8d65-0"
+      ],
+      "settings": {
+        "title": "SHOP",
+        "layout_mode": "carousel",
+        "show_product_info": true,
+        "show_vendor": true,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "165046536112bdba79": {
+      "type": "newsletter",
+      "settings": {
+        "text_color": "#000000",
+        "button_color": "#ffffff",
+        "title": "Feel like staying in touch?",
+        "content": "<p>Sign up for a weekly dispatch on Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt  ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip<\/p>"
+      }
+    },
+    "165398808455c75b62": {
+      "type": "blog-posts",
+      "blocks": {
+        "1653988084f4262897-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "stories"
+          }
+        }
+      },
+      "block_order": [
+        "1653988084f4262897-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "show_category": false,
+        "button_link": "",
+        "button_text": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "165122213783eafc33",
+    "165046536112bdba79",
+    "165398808455c75b62"
+  ]
+}

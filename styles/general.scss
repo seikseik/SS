@@ -1,0 +1,43 @@
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  @include ts($serif);
+  line-height: 1.5;
+}
+
+.heading_big{
+  @include hl;
+}
+.heading_medium{
+  @include hm;
+}
+.serif_text_medium{
+
+}
+
+.margin_bottom{
+  margin-bottom: 20px;
+}
+
+
+.desktop{
+  display: block;
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+
+  .heading_big{
+    @include m__hl;
+  }
+}

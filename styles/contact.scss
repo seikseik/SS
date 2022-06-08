@@ -1,0 +1,110 @@
+
+.page-Contacts{
+  background: black;
+  main{
+    height: 100vh;
+  }
+  .contact_container{
+    color:white;
+    height: 100%;
+  }
+  .page_contact_wrapper{
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .contact_text{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+  }
+}
+
+.Page__Contact {
+  background: $black;
+  top: 0;
+  height: 100vh;
+  color: $white;
+  padding: 0;
+  .Rte{
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.Contact__Wrapper {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.Contact__Block_1 {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contact__Block_2 {
+    width:50%;
+    height: 100%;
+    top: 0;
+    display: flex;
+}
+.Contact__EmailBig {
+  display: flex;
+  align-items: center;
+  font-family: $serif;
+  font-size: 4vw;
+  white-space: nowrap;
+}
+.Contact__Title {
+  font-size: $ts;
+  text-transform: none;
+  letter-spacing: 0;
+  color: $white;
+  font-family: $sansB;
+  margin-bottom: $gl;
+  display: flex;
+}
+.Contact__Text {
+  margin-bottom: $gl;
+  display: flex;
+}
+.Contact__AD {
+    margin-bottom: $gl;
+    display: flex;
+}
+
+
+@media screen and (max-width: 640px) {
+  .page-Contacts main{
+    height: auto;
+  }
+  .page-Contacts{
+    .page_contact_wrapper{
+      max-width: unset;
+      padding: 0 $gl;
+    }
+    .contact_text{
+      flex-direction: column-reverse;
+    }
+  }
+  .Contact__Wrapper{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .Contact__Block_1{
+    width:100%;
+  }
+  .Contact__Block_2{
+    width:100%;
+    height: auto;
+    padding-top: 20vh;
+    padding-bottom: $gl*2;
+  }
+  .Contact__EmailBig{
+    font-size: 30px;
+  }
+
+}

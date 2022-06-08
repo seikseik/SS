@@ -1,0 +1,53 @@
+@mixin hs{
+  font-family: $sansM;
+  font-size: $hs;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@mixin hm{
+  font-family: $sansB;
+  font-size: $hm;
+  text-transform: uppercase;
+}
+
+@mixin hl{
+  font-family: $sansB;
+  font-size: $hl;
+  line-height: 1.2;
+}
+
+@mixin m__hl{
+  font-family: $sansB;
+  font-size: $m__hl;
+  line-height: 1.2;
+}
+
+@mixin ts($family){
+  font-size: $ts;
+  font-family: $family;
+}
+
+@mixin center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin blur{
+  -webkit-backdrop-filter: blur(40px) !important;
+  backdrop-filter: blur(40px) !important;
+  background: transparent !important;
+}
+
+// come si usa blur? check se è supportato, altrimenti classe background di fallback
+
+// @supports ((-webkit-backdrop-filter: blur(40px)) or (backdrop-filter: blur(40px))) {
+//   .nomeclasse{
+//       @include blur;
+//     }
+// }
+// .nomeclasse{
+//     background: white;
+//  }

@@ -1,0 +1,37 @@
+<article class="ProductItem" {% if block %}{{ block.shopify_attributes }}{% endif %}>
+
+  {%- if article.image != blank -%}
+
+    {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,400,600,700,800,900,1000,1200', image: article.image -%}{%- endcapture -%}
+
+    {%- assign image_url = article.image | img_url: '600x'  -%}
+
+    <a class="article_item_wrapper" href="{{ article.url }}">
+
+      <img class="article_item__Image" src="{{ image_url }}" alt="{{ article.image.alt | escape }}">
+
+      <div class="article_item_description">
+        {%- if section.settings.show_category -%}
+          <span class="ArticleItem__Category Heading u-h6 Text--subdued">{{ article.tags.first }}</span>
+        {%- endif -%}
+
+        <h2 class="">
+          <a href="{{ article.url }}">{{ article.title }}</a>
+        </h2>
+
+
+        {% if article.metafields.my_fields.styling != blank %}
+          <p>Styling: {{ article.metafields.my_fields.styling }}</p>
+        {% endif %}
+
+        {% if article.metafields.my_fields.photo != blank %}
+          <p>Photos: {{ article.metafields.my_fields.photo }}</p>
+        {% endif %}
+
+      </div>
+
+    </a>
+  {%- endif -%}
+
+
+</article>
