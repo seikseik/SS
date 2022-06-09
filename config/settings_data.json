@@ -72,14 +72,15 @@
         "type": "header",
         "settings": {
           "use_sticky_header": true,
-          "logo_max_width": 140,
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_max_width": 165,
           "mobile_logo_max_width": 90,
           "show_country_selector": false,
           "show_locale_selector": false,
           "navigation_menu": "main-menu",
           "navigation_style": "logoLeft",
-          "show_icons": false,
-          "enable_transparent_header": false,
+          "show_icons": true,
+          "enable_transparent_header": true,
           "enable_transparent_header_collection": false,
           "show_transparent_header_border": false,
           "transparent_text_color": "#ffffff"
@@ -95,10 +96,26 @@
               "content": "<p><a href=\"mailto:office@redmilkmagazine.com\" title=\"mailto:office@redmilkmagazine.com\">OFFICE@REDMILKMAGAZINE.COM  <\/a><\/p><p><a href=\"mailto:office@redmilkmagazine.com\" title=\"mailto:office@redmilkmagazine.com\"> 0243337435 <\/a><\/p><p>VIA LOREM IPSUM, 20144, MILANO    PIVA 12184720964<\/p><p><a href=\"#\" title=\"#\">SHIPPING POLICY<\/a><\/p><p><a href=\"#\" title=\"#\">PRIVACY POLICY <\/a><\/p>",
               "show_social_media": true
             }
+          },
+          "b6663e36-0e36-4861-9b18-58b70164748a": {
+            "type": "text",
+            "settings": {
+              "title": "About the shop",
+              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+              "show_social_media": true
+            }
+          },
+          "c2592b19-74a1-4fcc-abcf-ab3b517a4bac": {
+            "type": "links",
+            "settings": {
+              "menu": ""
+            }
           }
         },
         "block_order": [
-          "ae1cf77a-7135-456f-ae10-2643f2054689"
+          "ae1cf77a-7135-456f-ae10-2643f2054689",
+          "b6663e36-0e36-4861-9b18-58b70164748a",
+          "c2592b19-74a1-4fcc-abcf-ab3b517a4bac"
         ],
         "settings": {
           "show_payment_methods": true,
