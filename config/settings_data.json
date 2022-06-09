@@ -26,7 +26,7 @@
     "heading_size": "small",
     "uppercase_heading": true,
     "text_font": "nunito_sans_n4",
-    "base_text_font_size": 14,
+    "base_text_font_size": 16,
     "show_page_transition": false,
     "show_button_transition": false,
     "show_image_zooming": false,
@@ -73,6 +73,7 @@
         "blocks": {
           "841d21e9-dda8-4f33-adc9-c16effbd727e": {
             "type": "mega_menu",
+            "disabled": true,
             "settings": {
               "navigation_mega_menu": "Shop",
               "push_1_heading": "Example heading",
