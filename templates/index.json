@@ -6,8 +6,9 @@
         "slide-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/big_ISIL_GUN_AW21_IIDA_HOUSE5718_copia.jpg",
             "apply_overlay": false,
-            "content_position": "bottomLeft",
+            "content_position": "middleCenter",
             "subheading": "Slide title",
             "title": "Tell your story",
             "button_1_text": "",
