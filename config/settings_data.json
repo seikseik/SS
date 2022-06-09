@@ -95,10 +95,26 @@
               "content": "<p><a href=\"mailto:office@redmilkmagazine.com\" title=\"mailto:office@redmilkmagazine.com\">OFFICE@REDMILKMAGAZINE.COM  <\/a><\/p><p><a href=\"mailto:office@redmilkmagazine.com\" title=\"mailto:office@redmilkmagazine.com\"> 0243337435 <\/a><\/p><p>VIA LOREM IPSUM, 20144, MILANO    PIVA 12184720964<\/p><p><a href=\"#\" title=\"#\">SHIPPING POLICY<\/a><\/p><p><a href=\"#\" title=\"#\">PRIVACY POLICY <\/a><\/p>",
               "show_social_media": true
             }
+          },
+          "b6663e36-0e36-4861-9b18-58b70164748a": {
+            "type": "text",
+            "settings": {
+              "title": "About the shop",
+              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+              "show_social_media": true
+            }
+          },
+          "c2592b19-74a1-4fcc-abcf-ab3b517a4bac": {
+            "type": "links",
+            "settings": {
+              "menu": ""
+            }
           }
         },
         "block_order": [
-          "ae1cf77a-7135-456f-ae10-2643f2054689"
+          "ae1cf77a-7135-456f-ae10-2643f2054689",
+          "b6663e36-0e36-4861-9b18-58b70164748a",
+          "c2592b19-74a1-4fcc-abcf-ab3b517a4bac"
         ],
         "settings": {
           "show_payment_methods": true,
