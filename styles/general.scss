@@ -3,25 +3,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
-  @include ts($serif);
-  line-height: 1.5;
-}
-
-.heading_big{
-  @include hl;
-}
-.heading_medium{
-  @include hm;
-}
-.serif_text_medium{
-
-}
-
-.margin_bottom{
-  margin-bottom: 20px;
-}
-
 
 .desktop{
   display: block;
