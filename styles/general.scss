@@ -3,6 +3,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body{
+  font-weight: $sansL;
+}
 
 .desktop{
   display: block;

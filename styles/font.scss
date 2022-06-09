@@ -1,24 +1,15 @@
 @font-face {
-  font-family: 'Futura-Medium';
-  src: url('FuturaStd-Medium.woff') format('woff'),
-       url('FuturaStd-Medium.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Klar semibold';
+    src: url('KlarheitGrotesk-Semibold.woff2') format('woff2'),
+        url('KlarheitGrotesk-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Futura-Bold';
-  src: url('FuturaStd-Bold.woff') format('woff'),
-       url('FuturaStd-Bold.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'GTA';
-  src: url('GTAlpina-Regular.woff') format('woff'),
-       url('GTAlpina-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Klar light';
+    src: url('KlarheitGrotesk-Light.woff2') format('woff2'),
+        url('KlarheitGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
 }

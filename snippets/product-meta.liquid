@@ -7,16 +7,7 @@
       {%- unless collection_for_vendor.empty? -%}
         <a href="{{ collection_for_vendor.url }}">{{ product.vendor }}</a>
       {%- else -%}
-{%- comment -%}
         {{- product.vendor -}}
-{%- endcomment -%}
-      {%- if product.vendor == "redmilk" -%}
-        <img class="redmilk_product_logo" src="{{ 'redmilk_black_logo.svg' | asset_url }}" />
-      {%- endif -%}
-
-      {%- if product.vendor == "redduo" -%}
-        <img class="redduo_product_logo" src="{{ 'redduo_small.svg' | asset_url }}" />
-      {%- endif -%}     
       {%- endunless -%}
     </h2>
   {%- endif -%}

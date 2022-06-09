@@ -18,7 +18,7 @@
     {%- endif -%}
 
     <a href="{{ product.url }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}
-    {% if product.vendor == 'redmilk' %}redmilk_product{% endif %}">
+    ">
       {%- if use_horizontal -%}
         {%- assign max_width = 125 -%}
       {%- else -%}
@@ -83,14 +83,7 @@
       <div class="ProductItem__Info {% unless use_horizontal %}ProductItem__Info--{{ settings.product_info_alignment }}{% endunless %}">
         {%- if show_vendor -%}
           <div class="ProductItem__Vendor">
-            {%- if product.vendor == "redmilk" -%}
-              <img class="redmilk_product_logo" src="{{ 'redmilk_black_logo.svg' | asset_url }}" />
-            {%- endif -%}
-
-            {%- if product.vendor == "redduo" -%}
-              <img class="redduo_product_logo" src="{{ 'redduo_small.svg' | asset_url }}" />
-            {%- endif -%}
-
+              {{product.vendor}}
           </div>
         {%- endif -%}
 
