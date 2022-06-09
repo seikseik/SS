@@ -6,9 +6,9 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hero__2.jpg",
+            "image": "shopify:\/\/shop_images\/big_ISIL_GUN_AW21_IIDA_HOUSE5718_copia.jpg",
             "apply_overlay": false,
-            "content_position": "bottomLeft",
+            "content_position": "middleCenter",
             "subheading": "Slide title",
             "title": "Tell your story",
             "button_1_text": "",
@@ -20,7 +20,6 @@
         "slide-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/person-stands-on-rocks-poking-out-of-the-ocean-shoreline.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "Slide title",
@@ -42,7 +41,7 @@
         "autoplay": false,
         "cycle_speed": 8,
         "text_color": "#ffffff",
-        "button_color": "#363636",
+        "button_color": "#ffffff",
         "button_background": "#ffffff"
       }
     },

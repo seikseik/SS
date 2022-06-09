@@ -30,7 +30,7 @@
     "show_page_transition": false,
     "show_button_transition": false,
     "show_image_zooming": false,
-    "search_mode": "product,article",
+    "search_mode": "product,article,page",
     "product_show_price_on_hover": false,
     "product_show_secondary_image": true,
     "product_info_alignment": "left",
@@ -79,8 +79,8 @@
           "navigation_menu": "main-menu",
           "navigation_style": "logoLeft",
           "show_icons": false,
-          "enable_transparent_header": true,
-          "enable_transparent_header_collection": true,
+          "enable_transparent_header": false,
+          "enable_transparent_header_collection": false,
           "show_transparent_header_border": false,
           "transparent_text_color": "#ffffff"
         }
