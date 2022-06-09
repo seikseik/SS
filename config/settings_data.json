@@ -70,6 +70,23 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "841d21e9-dda8-4f33-adc9-c16effbd727e": {
+            "type": "mega_menu",
+            "settings": {
+              "navigation_mega_menu": "shop",
+              "push_1_heading": "Example heading",
+              "push_1_subheading": "Example sub-heading",
+              "push_1_url": "",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
+              "push_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "841d21e9-dda8-4f33-adc9-c16effbd727e"
+        ],
         "settings": {
           "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/logo.png",
