@@ -23,10 +23,10 @@
     "secondary_elements_text_color": "#ffffff",
     "product_rating_color": "#ff224a",
     "heading_font": "montserrat_n5",
-    "heading_size": "small",
+    "heading_size": "normal",
     "uppercase_heading": true,
     "text_font": "nunito_sans_n4",
-    "base_text_font_size": 14,
+    "base_text_font_size": 16,
     "show_page_transition": false,
     "show_button_transition": false,
     "show_image_zooming": false,
@@ -70,6 +70,24 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "841d21e9-dda8-4f33-adc9-c16effbd727e": {
+            "type": "mega_menu",
+            "disabled": true,
+            "settings": {
+              "navigation_mega_menu": "Shop",
+              "push_1_heading": "Example heading",
+              "push_1_subheading": "Example sub-heading",
+              "push_1_url": "",
+              "push_2_heading": "Example heading",
+              "push_2_subheading": "Example sub-heading",
+              "push_2_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "841d21e9-dda8-4f33-adc9-c16effbd727e"
+        ],
         "settings": {
           "use_sticky_header": true,
           "logo": "shopify:\/\/shop_images\/logo.png",
@@ -89,33 +107,38 @@
       "footer": {
         "type": "footer",
         "blocks": {
-          "ae1cf77a-7135-456f-ae10-2643f2054689": {
-            "type": "text",
-            "settings": {
-              "title": "",
-              "content": "<p><a href=\"mailto:office@redmilkmagazine.com\" title=\"mailto:office@redmilkmagazine.com\">OFFICE@REDMILKMAGAZINE.COM  <\/a><\/p><p><a href=\"mailto:office@redmilkmagazine.com\" title=\"mailto:office@redmilkmagazine.com\"> 0243337435 <\/a><\/p><p>VIA LOREM IPSUM, 20144, MILANO    PIVA 12184720964<\/p><p><a href=\"#\" title=\"#\">SHIPPING POLICY<\/a><\/p><p><a href=\"#\" title=\"#\">PRIVACY POLICY <\/a><\/p>",
-              "show_social_media": true
-            }
-          },
-          "b6663e36-0e36-4861-9b18-58b70164748a": {
-            "type": "text",
-            "settings": {
-              "title": "About the shop",
-              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
-              "show_social_media": true
-            }
-          },
           "c2592b19-74a1-4fcc-abcf-ab3b517a4bac": {
             "type": "links",
             "settings": {
               "menu": ""
             }
+          },
+          "52caf387-01a0-4f00-bb85-5870093945b7": {
+            "type": "links",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "2ff22f18-0e7a-4372-b937-022ac28bf401": {
+            "type": "links",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "287c786e-32ad-48c0-a766-5fc310e2cadb": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "content": "",
+              "show_social_media": true
+            }
           }
         },
         "block_order": [
-          "ae1cf77a-7135-456f-ae10-2643f2054689",
-          "b6663e36-0e36-4861-9b18-58b70164748a",
-          "c2592b19-74a1-4fcc-abcf-ab3b517a4bac"
+          "c2592b19-74a1-4fcc-abcf-ab3b517a4bac",
+          "52caf387-01a0-4f00-bb85-5870093945b7",
+          "2ff22f18-0e7a-4372-b937-022ac28bf401",
+          "287c786e-32ad-48c0-a766-5fc310e2cadb"
         ],
         "settings": {
           "show_payment_methods": true,
