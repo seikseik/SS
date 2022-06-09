@@ -23,7 +23,7 @@
     "secondary_elements_text_color": "#ffffff",
     "product_rating_color": "#ff224a",
     "heading_font": "montserrat_n5",
-    "heading_size": "small",
+    "heading_size": "normal",
     "uppercase_heading": true,
     "text_font": "nunito_sans_n4",
     "base_text_font_size": 16,
