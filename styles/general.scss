@@ -5,7 +5,16 @@
 
 body{
   font-weight: $sansL;
+  font-family: $sansL;
 }
+
+h1, h2, h3, h4, h5{
+  font-family: $sansL;
+}
+
+
+
+
 
 .desktop{
   display: block;
@@ -13,6 +22,7 @@ body{
 .mobile{
   display: none;
 }
+
 @media screen and (max-width: 640px) {
   .desktop{
     display: none;

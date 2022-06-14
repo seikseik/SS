@@ -67,6 +67,11 @@ table {
 
 body {
   font-weight: "Klar light";
+  font-family: "Klar light";
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Klar light";
 }
 
 .desktop {
@@ -91,4 +96,12 @@ body {
     font-size: 40px;
     line-height: 1.2;
   }
+}
+.HorizontalList__Item a, .features--heading-normal .u-h6, .features--heading-normal .Rte h6 {
+  font-size: 15px;
+}
+
+.section_header {
+  padding: 30px;
+  font-size: 15px;
 }
