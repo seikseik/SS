@@ -787,11 +787,6 @@
         document.querySelector('#shopify-section-header').style.zIndex = ''; // Ugly hack
         // We attach an event to the page overlay to close it
 
-// custom
-  this.closeOverlayElement = document.querySelector('.CloseOverlay');
-  this.closeOverlayElement.classList.add('is-visible');
-  this.closeOverlayElement.addEventListener('click', this._closeListener);
-//
         this.pageOverlayElement.classList.add('is-visible');
         this.pageOverlayElement.addEventListener('click', this._closeListener);
         this.isOpen = true;
@@ -3372,10 +3367,10 @@
 
         this.timeline.staggerFromTo(toReveal, 0.45, {
           autoAlpha: 0,
-          // y: 30
+          y: 30
         }, {
           autoAlpha: 1,
-          // y: 0
+          y: 0
         }, 0.2);
       }
     }]);
@@ -3493,10 +3488,10 @@
 
         this.timeline.staggerFromTo(toReveal, 0.45, {
           autoAlpha: 0,
-          // y: 30
+          y: 30
         }, {
           autoAlpha: 1,
-          // y: 0
+          y: 0
         }, 0.2);
       }
     }]);
@@ -3949,10 +3944,10 @@
           this.timeline.clear();
           this.timeline.staggerFromTo(this.element.querySelectorAll('.ProductList .ProductItem, .ArticleList .ArticleItem'), 0.25, {
             autoAlpha: 0,
-            // y: 25
+            y: 25
           }, {
             autoAlpha: 1,
-            // y: 0
+            y: 0
           }, 0.1);
         } else {
           this.intersectionObserver = new IntersectionObserver(this._reveal.bind(this), {
@@ -3984,10 +3979,10 @@
 
         this.timeline.staggerFromTo(toReveal, 0.35, {
           autoAlpha: 0,
-          // y: 25
+          y: 25
         }, {
           autoAlpha: 1,
-          // y: 0
+          y: 0
         }, 0.15);
       }
     }, {
@@ -4406,10 +4401,10 @@
 
         this.timeline.staggerFromTo(toReveal, 0.45, {
           autoAlpha: 0,
-          // y: 25
+          y: 25
         }, {
           autoAlpha: 1,
-          // y: 0
+          y: 0
         }, 0.2);
       }
     }]);
@@ -4964,7 +4959,7 @@
 
           var logo = _this5.element.querySelector('.Header__FlexItem--logo');
 
-          // logo.classList.toggle('Header__FlexItem--increaseSpace', isOverlapping);
+          logo.classList.toggle('Header__FlexItem--increaseSpace', isOverlapping);
 
           _this5.element.classList.add('Header--initialized');
 
@@ -6560,7 +6555,6 @@
     return SlideshowSection;
   }();
 
-
   var TestimonialsSection = /*#__PURE__*/function () {
     function TestimonialsSection(container) {
       _classCallCheck(this, TestimonialsSection);
@@ -6823,7 +6817,6 @@
     sections.register('collection', CollectionSection); // Sections used on blog page
 
     sections.register('article-list', ArticleList); // Sections used on article page
-
 
     sections.register('article', ArticleSection); // Sections used on content pages
 
