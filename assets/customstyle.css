@@ -25,10 +25,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
-
 ol, ul {
   list-style: none;
 }
@@ -162,6 +158,25 @@ h1, h2, h3, h4, h5 {
 }
 .ProductItem__Wrapper .ProductItem__Info.ProductItem__Info--left .ProductItem__PriceList {
   margin-left: 15px;
+}
+
+.ProductForm__AddToCart {
+  font-family: "Klar semibold";
+  text-transform: uppercase;
+  padding: 15px 30px;
+  background: black;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  font-size: 14px;
+  transition: none;
+}
+.ProductForm__AddToCart:before {
+  content: none;
+}
+.ProductForm__AddToCart:hover {
+  background: 0;
+  color: black;
 }
 
 .section_header {
