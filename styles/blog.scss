@@ -15,4 +15,26 @@
       margin-bottom: $gl;
     }
   }
+  .ArticleItem__Content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .ArticleItem__Excerpt{
+    text-align: center;
+    line-height: 1.3;
+  }
+  .Link--underline{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px 0;
+    border-bottom:1px solid black;
+    letter-spacing: 1px;
+    font-size: $txs;
+    margin-top: $gl;
+    &:before{
+      content: none;
+    }
+  }
 }

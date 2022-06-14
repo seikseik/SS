@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5 {
   box-shadow: none;
 }
 
+.shopify-section--bordered > .Section--spacingNormal {
+  padding: 0;
+}
+
 .desktop {
   display: block;
 }
@@ -176,4 +180,26 @@ h1, h2, h3, h4, h5 {
   font-size: 16px;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+.project_list .ArticleItem__Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project_list .ArticleItem__Excerpt {
+  text-align: center;
+  line-height: 1.3;
+}
+.project_list .Link--underline {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 3px 0;
+  border-bottom: 1px solid black;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin-top: 30px;
+}
+.project_list .Link--underline:before {
+  content: none;
 }

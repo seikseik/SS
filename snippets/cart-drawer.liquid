@@ -17,10 +17,6 @@
   </div>
 
   <form class="Cart Drawer__Content" action="{{ routes.cart_url }}" method="POST" novalidate>
-{% render 'icon' with 'close' %}
-<svg class="CloseOverlay" role="presentation" viewBox="0 0 16 14">
-  <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
-</svg>
     <div class="Drawer__Main" data-scrollable>
       {%- if settings.cart_show_free_shipping_threshold -%}
         {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
@@ -61,9 +57,11 @@
               <button type="button" class="Cart__NoteButton" data-action="toggle-cart-note">{{ 'cart.general.edit_note' | t }}</button>
             {%- endif -%}
           {%- endif -%}
+
           {%- if shipping_and_taxes_notice != blank -%}
             <p class="Cart__Taxes Text--subdued">{{ shipping_and_taxes_notice }}</p>
           {%- endif -%}
+
           {%- if cart.cart_level_discount_applications != blank -%}
             {%- for discount_application in cart.cart_level_discount_applications -%}
               <p class="Cart__Discount">{%- render 'icon' with 'sale' -%} {{ 'cart.general.discount' | t }} ({{ discount_application.title }}): -<span>{{ discount_application.total_allocated_amount | money }}</span></p>
@@ -71,16 +69,10 @@
           {%- endif -%}
         {%- endif -%}
 
-<div class="Drawer__Footer_Total">
-  <span class="Drawer__Footer_TotalText">Total:</span>
-  <span class="Drawer__Footer_TotalPrice">{{ cart.total_price | money_with_currency }}</span>
-</div>
-
-
-        <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary">
+        <button type="submit" name="checkout" class="Cart__Checkout Button Button--primary Button--full">
           <span>{{- 'cart.general.checkout' | t -}}</span>
-
-
+          <span class="Button__SeparatorDot"></span>
+          <span>{{ cart.total_price | money_with_currency }}</span>
         </button>
 
         {%- if settings.cart_enable_notes -%}
