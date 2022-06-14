@@ -1,0 +1,9 @@
+.ProductItem__Wrapper{
+  .ProductItem__Info.ProductItem__Info--left{
+    display: flex;
+    justify-content: space-between;
+    .ProductItem__PriceList{
+      margin-left: $gl/2;
+    }
+  }
+}

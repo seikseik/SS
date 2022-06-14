@@ -22,6 +22,29 @@ h1, h2, h3, h4, h5{
   height: unset;
 }
 
+
+.RoundButton, .flickity-prev-next-button{
+  background: 0;
+  color:black;
+  box-shadow: none;
+}
+
+
+.project_list{
+  background: $grey;
+  .ArticleItem__Content{
+    .ArticleItem__Title{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: $ts;
+      margin-top: $gl;
+      margin-bottom: $gl;
+    }
+  }
+}
+
+
+
 .desktop{
   display: block;
 }

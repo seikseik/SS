@@ -83,6 +83,23 @@ h1, h2, h3, h4, h5 {
   height: unset;
 }
 
+.RoundButton, .flickity-prev-next-button {
+  background: 0;
+  color: black;
+  box-shadow: none;
+}
+
+.project_list {
+  background: #F3F3F3;
+}
+.project_list .ArticleItem__Content .ArticleItem__Title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .desktop {
   display: block;
 }
@@ -110,6 +127,10 @@ h1, h2, h3, h4, h5 {
   font-size: 16px;
 }
 
+.Header__Wrapper {
+  padding: 30px !important;
+}
+
 .Slideshow__Content .SectionHeader__Heading {
   text-transform: uppercase;
   font-size: 24px;
@@ -126,6 +147,24 @@ h1, h2, h3, h4, h5 {
   height: unset;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+.Image--contrast::after {
+  background-image: linear-gradient(to top, rgba(4, 4, 4, 0.35), rgba(54, 54, 54, 0.2));
+}
+
+.flickity-page-dots .dot {
+  width: 15px;
+  height: 15px;
+  border-width: 1px;
+}
+
+.ProductItem__Wrapper .ProductItem__Info.ProductItem__Info--left {
+  display: flex;
+  justify-content: space-between;
+}
+.ProductItem__Wrapper .ProductItem__Info.ProductItem__Info--left .ProductItem__PriceList {
+  margin-left: 15px;
 }
 
 .section_header {

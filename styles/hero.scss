@@ -16,3 +16,14 @@
   text-transform: uppercase;
   font-size: $txs;
 }
+
+.Image--contrast::after{
+  background-image: linear-gradient(to top, rgba(4, 4, 4, 0.35), rgba(54, 54, 54, 0.2))
+}
+
+
+.flickity-page-dots .dot{
+  width:15px;
+  height: 15px;
+  border-width: 1px;
+}
