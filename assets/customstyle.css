@@ -74,6 +74,15 @@ h1, h2, h3, h4, h5 {
   font-family: "Klar light";
 }
 
+.Button--primary, .shopify-payment-button__button--unbranded, .spr-summary-actions-newreview, .spr-button-primary:not(input) {
+  text-transform: uppercase;
+  font-size: 12px;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 3px 0;
+  height: unset;
+}
+
 .desktop {
   display: block;
 }
@@ -98,10 +107,28 @@ h1, h2, h3, h4, h5 {
   }
 }
 .HorizontalList__Item a, .features--heading-normal .u-h6, .features--heading-normal .Rte h6 {
-  font-size: 15px;
+  font-size: 16px;
+}
+
+.Slideshow__Content .SectionHeader__Heading {
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.link_hero {
+  color: white;
+  text-transform: uppercase;
+  background: 0;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 3px 0;
+  height: unset;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
 .section_header {
   padding: 30px;
-  font-size: 15px;
+  font-size: 16px;
 }

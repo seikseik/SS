@@ -13,8 +13,14 @@ h1, h2, h3, h4, h5{
 }
 
 
-
-
+.Button--primary, .shopify-payment-button__button--unbranded, .spr-summary-actions-newreview, .spr-button-primary:not(input){
+  text-transform: uppercase;
+  font-size: 12px;
+  border:none;
+  border-bottom:1px solid black;
+  padding: 3px 0;
+  height: unset;
+}
 
 .desktop{
   display: block;

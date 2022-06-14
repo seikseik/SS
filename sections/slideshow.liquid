@@ -7,14 +7,12 @@
   "dragThreshold": 15,
   "pauseAutoPlayOnHover": false,
   "autoPlay": {% if section.settings.autoplay %}{{ section.settings.cycle_speed | times: 1000 }}{% else %}false{% endif %},
-  "pageDots": false
+  "pageDots": {% if section.blocks.size > 1 %}true{% else %}false{% endif %}
 }
 {%- endcapture -%}
 
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
-
-
     <div class="Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots"
          data-flickity-config='{{ flickity_options }}'>
       {%- for block in section.blocks -%}
@@ -64,9 +62,18 @@
             </div>
           {%- endif -%}
 
-          {%- capture slideshow_content -%}
+
+            {%- capture slideshow_content -%}
 
 
+            {%- if block.settings.title != blank -%}
+              <h2 class="SectionHeader__Heading SectionHeader__Heading--emphasize Heading u-h1">{{ block.settings.title | escape }}</h2>
+            {%- endif -%}
+
+
+              {%- if block.settings.subheading != blank -%}
+                <h3 class="SectionHeader__SubHeading Heading u-h6">{{ block.settings.subheading | escape }}</h3>
+              {%- endif -%}
 
 
             {%- if block.settings.button_1_text != blank and block.settings.button_2_text != blank -%}
@@ -79,11 +86,11 @@
               <div class="SectionHeader__ButtonWrapper">
                 <div class="ButtonGroup ButtonGroup--spacingSmall {% if has_two_buttons %}ButtonGroup--sameSize{% endif %}">
                   {%- if block.settings.button_1_text != blank -%}
-                    <a href="{{ block.settings.button_1_link }}" class="ButtonGroup__Item Button">{{ block.settings.button_1_text | escape }}</a>
+                    <a href="{{ block.settings.button_1_link }}" class="link_hero">{{ block.settings.button_1_text | escape }}</a>
                   {%- endif -%}
 
                   {%- if block.settings.button_2_text != blank -%}
-                    <a href="{{ block.settings.button_2_link }}" class="ButtonGroup__Item Button">{{ block.settings.button_2_text | escape }}</a>
+                    <a href="{{ block.settings.button_2_link }}" class="link_hero">{{ block.settings.button_2_text | escape }}</a>
                   {%- endif -%}
                 </div>
               </div>
@@ -97,7 +104,6 @@
               </header>
             </div>
           {%- endif -%}
-
         {%- endcapture -%}
 
         {%- comment -%}This code allows to cover a common use case where merchant would like to have a clickable image{%- endcomment -%}
