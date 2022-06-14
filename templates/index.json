@@ -134,7 +134,7 @@
         "1653988084f4262897-0": {
           "type": "blog",
           "settings": {
-            "blog": "stories"
+            "blog": "projects"
           }
         }
       },
@@ -143,7 +143,7 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Blog posts",
+        "title": "Our Projects",
         "show_category": false,
         "button_link": "",
         "button_text": ""
