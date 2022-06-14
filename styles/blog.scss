@@ -1,0 +1,18 @@
+.project_list{
+  background: $grey;
+  .section_header{
+    padding: $gl*2 $gl;
+  }
+  .ArticleListWrapper{
+    padding:0 $gl*2;
+  }
+  .ArticleItem__Content{
+    .ArticleItem__Title{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: $ts;
+      margin-top: $gl;
+      margin-bottom: $gl;
+    }
+  }
+}

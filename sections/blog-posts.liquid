@@ -1,15 +1,13 @@
 <section class="Section Section--spacingNormal project_list" id="section-{{ section.id }}" data-section-type="article-list" data-section-id="{{ section.id }}">
-  <!-- <div class="Container"> -->
+  <div class="Container">
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="section_header SectionHeader--center">
         {%- if section.settings.subheading != blank -%}
-          <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
+          <h3 class="Heading u-h6">{{ section.settings.subheading | escape }}</h3>
         {%- endif -%}
 
         {%- if section.settings.title != blank -%}
-          <h2 class="featured_blog_header heading_medium">
-              {{section.settings.title}}
-          </h2>
+          <h2 class="project_list_title">{{ section.settings.title | escape }}</h2>
         {%- endif -%}
       </header>
     {%- endif -%}
@@ -51,8 +49,6 @@
           {%- for i in (1..3) -%}
             <div class="Grid__Cell 1/2--tablet 1/3--lap-and-up {% if forloop.index == 3 %}hidden-tablet{% endif %}">
               <article class="ArticleItem">
-                <a href="#" class="featured_blog_link">
-
                 {%- capture placeholder -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
 
                 <div class="ArticleItem__ImageWrapper AspectRatio" style="--aspect-ratio: 1.7">
@@ -65,18 +61,12 @@
                   {%- endif -%}
 
                   <h2 class="ArticleItem__Title Heading u-h2">
-                  {{ 'home_page.onboarding.article_name' | t }}
+                    <a href="#">{{ 'home_page.onboarding.article_name' | t }}</a>
                   </h2>
 
-                  {% if article.metafields.my_fields.styling != blank %}
-                    <p>{{ article.metafields.my_fields.styling }}</p>
-                  {% endif %}
+                  <p class="ArticleItem__Excerpt">{{ 'home_page.onboarding.article_excerpt' | t }}</p>
 
-                  {% if article.metafields.my_fields.photo != blank %}
-                    <p>{{ article.metafields.my_fields.photo }}</p>
-                  {% endif %}
-
-                  </a>
+                  <a href="#" class="ArticleItem__Link Link Link--underline">{{ 'blog.article.read_more' | t }}</a>
                 </div>
               </article>
             </div>
@@ -90,7 +80,7 @@
         <a href="{{ section.settings.button_link }}" class="Button Button--primary">{{ section.settings.button_text | escape }}</a>
       </div>
     {%- endif -%}
-  <!-- </div> -->
+  </div>
 </section>
 
 {% schema %}

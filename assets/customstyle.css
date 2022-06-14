@@ -89,17 +89,6 @@ h1, h2, h3, h4, h5 {
   box-shadow: none;
 }
 
-.project_list {
-  background: #F3F3F3;
-}
-.project_list .ArticleItem__Content .ArticleItem__Title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .desktop {
   display: block;
 }
@@ -170,4 +159,21 @@ h1, h2, h3, h4, h5 {
 .section_header {
   padding: 30px;
   font-size: 16px;
+}
+
+.project_list {
+  background: #F3F3F3;
+}
+.project_list .section_header {
+  padding: 60px 30px;
+}
+.project_list .ArticleListWrapper {
+  padding: 0 60px;
+}
+.project_list .ArticleItem__Content .ArticleItem__Title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
