@@ -27,7 +27,7 @@
     "uppercase_heading": true,
     "text_font": "nunito_sans_n4",
     "base_text_font_size": 17,
-    "show_page_transition": false,
+    "show_page_transition": true,
     "show_button_transition": false,
     "show_image_zooming": false,
     "search_mode": "product,article,page",
