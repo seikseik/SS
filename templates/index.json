@@ -31,42 +31,6 @@
         "button_background": "#ffffff"
       }
     },
-    "165529824024753c43": {
-      "type": "featured-collections_custom",
-      "blocks": {
-        "16552982402ca35043-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "candles",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        },
-        "c50b2c6b-27ec-4528-a6f8-c2d90794bdba": {
-          "type": "collection",
-          "settings": {
-            "collection": "cushions",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        }
-      },
-      "block_order": [
-        "16552982402ca35043-0",
-        "c50b2c6b-27ec-4528-a6f8-c2d90794bdba"
-      ],
-      "settings": {
-        "title": "Featured collection",
-        "layout_mode": "carousel",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "1",
-        "grid_desktop_items_per_row": 4
-      }
-    },
     "165478975962e1088a": {
       "type": "collection-list",
       "blocks": {
@@ -162,7 +126,6 @@
   },
   "order": [
     "slideshow",
-    "165529824024753c43",
     "165478975962e1088a",
     "165398808455c75b62"
   ]
