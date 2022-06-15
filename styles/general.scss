@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5{
 }
 
 
-.Button--primary, .shopify-payment-button__button--unbranded, .spr-summary-actions-newreview, .spr-button-primary:not(input){
+.custom_buttom{
   text-transform: uppercase;
   font-size: 12px;
   border:none;
@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5{
   padding: 0;
 }
 
+
+.Search__Input{
+  font-size: $ts;
+}
+.PageOverlay{
+  transition: all 0.3s ease-in-out !important;
+}
 
 .desktop{
   display: block;

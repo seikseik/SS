@@ -346,6 +346,7 @@ HEADER CONTENT
                   {%- if use_mega_menu or menu_item_dropdown == blank -%}
                     <span class="Header__LinkSpacer">{{ link.title | escape }}</span>
                   {%- endif -%}
+                  {% if menu_item_dropdown != blank %}<span class="drop_plus">+</span>{% endif %}
                 </a>
 
                 {{- menu_item_dropdown -}}

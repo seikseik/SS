@@ -28,8 +28,19 @@
       opacity: 1;
       visibility: visible;
     }
+    .drop_plus{
+      transform: rotate(90DEG);
+    }
   }
 }
+.drop_plus{
+  margin-left: 8px;
+  position: absolute;
+  padding-top: 3px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
 .DropdownMenu{
   background: 0;
   border:none;
@@ -49,6 +60,5 @@
   }
   .Link{
     padding: 0;
-
   }
 }
