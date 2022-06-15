@@ -79,6 +79,25 @@ h1, h2, h3, h4, h5 {
   height: unset;
 }
 
+.Black_button {
+  font-family: "Klar semibold";
+  text-transform: uppercase;
+  padding: 15px 30px;
+  background: black;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  font-size: 14px;
+  transition: none;
+}
+.Black_button:before {
+  content: none !important;
+}
+.Black_button:hover {
+  background: 0;
+  color: black;
+}
+
 .RoundButton, .flickity-prev-next-button {
   background: 0;
   color: black;
@@ -230,8 +249,8 @@ h1, h2, h3, h4, h5 {
   padding: 15px 30px;
   background: black;
   border: 1px solid black;
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   font-size: 14px;
   transition: none;
 }
@@ -239,13 +258,33 @@ h1, h2, h3, h4, h5 {
   content: none;
 }
 .ProductForm__AddToCart:hover {
-  background: 0;
-  color: black;
+  background: black;
+  color: white;
 }
 
 .section_header {
   padding: 30px;
   font-size: 16px;
+}
+
+.Cart .Drawer__Footer, .Cart__OffscreenNoteContainer {
+  padding: 30px;
+}
+
+.Cart__Taxes {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.ProductForm__QuantitySelector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+.ProductForm__QuantitySelector .QuantitySelector {
+  border: none;
 }
 
 .page-Contatti main {

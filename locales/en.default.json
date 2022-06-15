@@ -286,7 +286,7 @@
       "shipping_and_taxes_notice": "Shipping & taxes calculated at checkout",
       "discount": "Discount",
       "total": "Total",
-      "checkout": "Go to checkout"
+      "checkout": "checkout"
     },
     "items": {
       "product": "Product",

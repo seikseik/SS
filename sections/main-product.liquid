@@ -326,16 +326,16 @@
                 {%- when 'quantity_selector' -%}
                   <div class="ProductForm__QuantitySelector" {{ block.shopify_attributes }}>
                     {%- if block.settings.show_label -%}
-                      <span class="ProductForm__Label">{{ 'product.form.quantity' | t }}:</span>
+                      <span class="ProductForm__Label">{{ 'product.form.quantity' | t }}</span>
                     {%- endif -%}
 
                     <div class="QuantitySelector QuantitySelector--large">
                       {%- assign quantity_minus_one = line_item.quantity | minus: 1 -%}
-
                       <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="decrease-quantity">{% render 'icon' with 'minus' %}</button>
                       <input type="text" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" name="quantity" value="1" aria-label="{{ 'product.form.quantity' | t }}">
                       <button type="button" class="QuantitySelector__Button Link Link--secondary" data-action="increase-quantity">{% render 'icon' with 'plus' %}</button>
                     </div>
+
                   </div>
 
                 {%- when 'inventory' -%}

@@ -14,15 +14,20 @@
   padding: $gl/2 $gl;
   background: black;
   border:1px solid black;
-  background: black;
-  color:white;
+  background: white;
+  color:black;
   font-size: 14px;
   transition: none;
   &:before{
     content: none;
   }
   &:hover{
-    background: 0;
-    color:black;
+    background: black;
+    color:white;
   }
 }
+
+// .Product__Gallery{
+//   display: flex;
+//   flex-direction: row-reverse;
+// }

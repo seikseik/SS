@@ -1,0 +1,18 @@
+.Cart .Drawer__Footer, .Cart__OffscreenNoteContainer{
+  padding: $gl;
+}
+.Cart__Taxes{
+  font-size: $txs;
+  margin-bottom: 16px;
+}
+
+.ProductForm__QuantitySelector{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  .QuantitySelector{
+    border: none;
+  }
+}
