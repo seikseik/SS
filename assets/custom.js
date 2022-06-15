@@ -22,32 +22,3 @@
  *   bubbles: true
  * }));
  */
-
- Marquee3k.init();
-
-let archivio = document.querySelector(".ArticleList_archive");
-if(archivio != undefined){
-  var flkty = new Flickity(archivio,{
-    freeScroll: true,
-    freeScrollFriction: 0.03,
-    contain: true,
-    prevNextButtons: false,
-    pageDots: false,
-    wrapAround: true
-  });
-}
-
-
-let article_slide = document.querySelector(".article_slideshow");
-document.addEventListener("DOMContentLoaded", function(event) {
-  if(article_slide != undefined){
-  var flkty = new Flickity(".article_slideshow",{
-    contain: true,
-    prevNextButtons: false,
-    pageDots: true,
-    wrapAround: true,
-    autoPlay: true,
-    imagesLoaded: true
-  });
- }
-})

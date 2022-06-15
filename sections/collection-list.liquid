@@ -3,7 +3,7 @@
   "prevNextButtons": true,
   "pageDots": {% if section.blocks.size > 1 %}true{% else %}false{% endif %},
   "setGallerySize": true,
-  "wrapAround": true,
+  "wrapAround": false,
   "watchCSS": true,
   "dragThreshold": 8
 }
@@ -23,7 +23,10 @@
     </div>
   {%- else -%}
     <div class="Carousel Carousel--insideDots CollectionList {% if section.settings.add_spacing %}CollectionList--spaced{% endif %}" data-flickity-config='{{ flickity_options }}'>
-      {{ collection_items }}
+      {%- for block in section.blocks -%}
+        {%- assign collection = collections[block.settings.collection] -%}
+        {%- render 'collection-item', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+      {%- endfor -%}
     </div>
   {%- endif -%}
 </section>
