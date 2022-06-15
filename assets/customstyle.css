@@ -265,19 +265,27 @@ h1, h2, h3, h4, h5 {
 .section_header {
   padding: 30px;
   font-size: 16px;
+  text-align: center;
 }
 
 .collectionListCarousel {
-  width: 1200px;
   max-width: 100%;
-  padding: 30px 90px;
   margin: 50px auto;
+  margin-top: 0;
+  padding-top: 0;
 }
 .collectionListCarousel .flickity-page-dots .dot {
   border: 1px solid black;
 }
 .collectionListCarousel .flickity-page-dots .dot.is-selected {
   background: black;
+}
+.collectionListCarousel .CollectionItem__Wrapper {
+  height: 30vw;
+}
+
+.CollectionItem__Content {
+  position: unset;
 }
 
 .CollectionItem {

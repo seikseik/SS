@@ -1,19 +1,28 @@
 .section_header{
   padding: $gl;
   font-size: $ts;
+  text-align: center;
 }
 
 .collectionListCarousel{
-  width: 1200px;
   max-width: 100%;
-  padding: $gl $gl*3;
   margin: 50px auto;
+  margin-top: 0;
+  padding-top: 0;
   .flickity-page-dots .dot{
     border:1px solid black;
   }
   .flickity-page-dots .dot.is-selected{
     background: black;
   }
+
+  .CollectionItem__Wrapper{
+    height: 30vw;
+  }
+}
+
+.CollectionItem__Content{
+  position: unset;
 }
 
 .CollectionItem{
