@@ -37,7 +37,16 @@
         "16552982402ca35043-0": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "candles",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        },
+        "c50b2c6b-27ec-4528-a6f8-c2d90794bdba": {
+          "type": "collection",
+          "settings": {
+            "collection": "cushions",
             "title": "",
             "grid_items_count": 8,
             "button_text": "View all products"
@@ -45,7 +54,8 @@
         }
       },
       "block_order": [
-        "16552982402ca35043-0"
+        "16552982402ca35043-0",
+        "c50b2c6b-27ec-4528-a6f8-c2d90794bdba"
       ],
       "settings": {
         "title": "Featured collection",
