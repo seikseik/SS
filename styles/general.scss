@@ -39,6 +39,12 @@ h1, h2, h3, h4, h5{
 }
 .PageOverlay{
   transition: all 0.3s ease-in-out !important;
+  opacity: unset;
+  background: rgba(0, 0, 0, 0);
+  &.is-visible{
+    background: rgba(0, 0, 0, 0.5);
+    opacity: unset;
+  }
 }
 
 .desktop{
