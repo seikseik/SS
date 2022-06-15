@@ -2,3 +2,21 @@
   padding: $gl;
   font-size: $ts;
 }
+
+.collectionListCarousel{
+  width: 1200px;
+  max-width: 100%;
+  padding: $gl $gl*3;
+  margin: 50px auto;
+  .flickity-page-dots .dot{
+    border:1px solid black;
+  }
+  .flickity-page-dots .dot.is-selected{
+    background: black;
+  }
+}
+
+.CollectionItem{
+  width:25%;
+  margin: 0 20px;
+}

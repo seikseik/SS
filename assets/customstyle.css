@@ -267,6 +267,24 @@ h1, h2, h3, h4, h5 {
   font-size: 16px;
 }
 
+.collectionListCarousel {
+  width: 1200px;
+  max-width: 100%;
+  padding: 30px 90px;
+  margin: 50px auto;
+}
+.collectionListCarousel .flickity-page-dots .dot {
+  border: 1px solid black;
+}
+.collectionListCarousel .flickity-page-dots .dot.is-selected {
+  background: black;
+}
+
+.CollectionItem {
+  width: 25%;
+  margin: 0 20px;
+}
+
 .Cart .Drawer__Footer, .Cart__OffscreenNoteContainer {
   padding: 30px;
 }

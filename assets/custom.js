@@ -22,3 +22,13 @@
  *   bubbles: true
  * }));
  */
+
+ document.addEventListener("DOMContentLoaded", function(event) {
+ var flkty = new Flickity(".collectionListCarousel",{
+   prevNextButtons: false,
+   pageDots: true,
+   wrapAround: true,
+   adaptiveHeight: false,
+   contain: true,
+ });
+});

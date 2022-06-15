@@ -3751,11 +3751,11 @@
 
   var CollectionListSection = /*#__PURE__*/function () {
     function CollectionListSection(container) {
+
       _classCallCheck(this, CollectionListSection);
 
       this.element = container;
       var collectionListElement = this.element.querySelector('[data-flickity-config]');
-
       if (collectionListElement) {
         this.carousel = new Carousel(collectionListElement);
       }
