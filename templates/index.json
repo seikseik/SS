@@ -31,6 +31,32 @@
         "button_background": "#ffffff"
       }
     },
+    "165529824024753c43": {
+      "type": "featured-collections_custom",
+      "blocks": {
+        "16552982402ca35043-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "16552982402ca35043-0"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
     "165478992892db7b91": {
       "type": "featured-collections",
       "blocks": {
@@ -138,6 +164,7 @@
   },
   "order": [
     "slideshow",
+    "165529824024753c43",
     "165478992892db7b91",
     "165478975962e1088a",
     "165398808455c75b62"
