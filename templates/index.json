@@ -133,7 +133,7 @@
         "image_size": "normal",
         "add_spacing": true,
         "expand_collection": false,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "text_color": "#ffffff",
         "button_color": "#363636"
       }
