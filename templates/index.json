@@ -108,12 +108,26 @@
             "button_link": "",
             "apply_overlay": true
           }
+        },
+        "63bf3bf5-857a-4f61-98d2-538cf13852eb": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
         }
       },
       "block_order": [
         "16547897591f492472-0",
         "16547897591f492472-1",
-        "16547897591f492472-2"
+        "16547897591f492472-2",
+        "63bf3bf5-857a-4f61-98d2-538cf13852eb"
       ],
       "settings": {
         "image_size": "normal",
