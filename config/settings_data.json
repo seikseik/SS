@@ -28,7 +28,7 @@
     "text_font": "nunito_sans_n4",
     "base_text_font_size": 17,
     "show_page_transition": false,
-    "show_button_transition": false,
+    "show_button_transition": true,
     "show_image_zooming": false,
     "search_mode": "product,article,page",
     "product_show_price_on_hover": false,
