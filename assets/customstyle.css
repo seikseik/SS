@@ -124,6 +124,45 @@ h1, h2, h3, h4, h5 {
   display: none;
 }
 
+.dropdown_background {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  top: 85px;
+  background: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.HorizontalList__Item.is-expanded .dropdown_background {
+  opacity: 1;
+  visibility: visible;
+}
+
+.DropdownMenu {
+  background: 0;
+  border: none;
+  text-align: left;
+}
+.DropdownMenu:before {
+  content: none;
+}
+.DropdownMenu .Linklist__Item {
+  opacity: 0.2;
+  transition: all 0.3s ease-in-out;
+}
+.DropdownMenu .Linklist__Item:before {
+  content: none;
+}
+.DropdownMenu .Linklist__Item:hover, .DropdownMenu .Linklist__Item.active {
+  opacity: 1;
+}
+.DropdownMenu .Link {
+  padding: 0;
+}
+
 .Slideshow__Content .SectionHeader__Heading {
   text-transform: uppercase;
   font-size: 24px;
