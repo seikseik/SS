@@ -83,12 +83,14 @@
         },
         "1e15a7bb-6b03-423c-9821-63e39fe3204a": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/2D00368A-6004-4801-BA5B-190EC8848B91.jpg"
           }
         },
         "fd1e48b0-23ac-432f-8d3e-4d9ca0b7bc8f": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Larusi_Imperfect_Beauty_07.jpg"
           }
