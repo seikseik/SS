@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5 {
   font-family: "Klar light";
 }
 
+.SectionHeader__Heading {
+  font-size: 28px !important;
+}
+
 .custom_buttom {
   text-transform: uppercase;
   font-size: 12px;
@@ -120,6 +124,13 @@ h1, h2, h3, h4, h5 {
 .PageOverlay.is-visible {
   background: rgba(0, 0, 0, 0.5);
   opacity: unset;
+}
+
+.section_container {
+  width: 1300px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .desktop {
@@ -281,7 +292,7 @@ h1, h2, h3, h4, h5 {
   background: black;
 }
 .collectionListCarousel .CollectionItem__Wrapper {
-  height: 30vw;
+  height: 500px;
 }
 
 .CollectionItem__Content {
@@ -290,7 +301,9 @@ h1, h2, h3, h4, h5 {
 
 .CollectionItem {
   width: 25%;
-  margin: 0 20px;
+  min-width: 25%;
+  max-width: 25%;
+  margin: 0 10px;
 }
 
 .Cart .Drawer__Footer, .Cart__OffscreenNoteContainer {
@@ -361,4 +374,130 @@ h1, h2, h3, h4, h5 {
 }
 .project_list .Link--underline:before {
   content: none;
+}
+
+.inspiration_image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inspiration_container {
+  columns: 4 200px;
+  column-gap: 1rem;
+  padding: 1rem;
+  border: 10px solid #937d10;
+}
+.inspiration_container .inspiration_image_container {
+  width: 150px;
+  background: #F3F3F3;
+  color: white;
+  margin: 0 1rem 1rem 0;
+  display: inline-block;
+  width: 100%;
+}
+.inspiration_container .inspiration_image_container:nth-child(1) {
+  height: 412px;
+  line-height: 412px;
+}
+.inspiration_container .inspiration_image_container:nth-child(2) {
+  height: 272px;
+  line-height: 272px;
+}
+.inspiration_container .inspiration_image_container:nth-child(3) {
+  height: 427px;
+  line-height: 427px;
+}
+.inspiration_container .inspiration_image_container:nth-child(4) {
+  height: 376px;
+  line-height: 376px;
+}
+.inspiration_container .inspiration_image_container:nth-child(5) {
+  height: 349px;
+  line-height: 349px;
+}
+.inspiration_container .inspiration_image_container:nth-child(6) {
+  height: 348px;
+  line-height: 348px;
+}
+.inspiration_container .inspiration_image_container:nth-child(7) {
+  height: 445px;
+  line-height: 445px;
+}
+.inspiration_container .inspiration_image_container:nth-child(8) {
+  height: 148px;
+  line-height: 148px;
+}
+.inspiration_container .inspiration_image_container:nth-child(9) {
+  height: 327px;
+  line-height: 327px;
+}
+.inspiration_container .inspiration_image_container:nth-child(10) {
+  height: 407px;
+  line-height: 407px;
+}
+.inspiration_container .inspiration_image_container:nth-child(11) {
+  height: 401px;
+  line-height: 401px;
+}
+.inspiration_container .inspiration_image_container:nth-child(12) {
+  height: 263px;
+  line-height: 263px;
+}
+.inspiration_container .inspiration_image_container:nth-child(13) {
+  height: 375px;
+  line-height: 375px;
+}
+.inspiration_container .inspiration_image_container:nth-child(14) {
+  height: 443px;
+  line-height: 443px;
+}
+.inspiration_container .inspiration_image_container:nth-child(15) {
+  height: 405px;
+  line-height: 405px;
+}
+.inspiration_container .inspiration_image_container:nth-child(16) {
+  height: 416px;
+  line-height: 416px;
+}
+.inspiration_container .inspiration_image_container:nth-child(17) {
+  height: 364px;
+  line-height: 364px;
+}
+.inspiration_container .inspiration_image_container:nth-child(18) {
+  height: 304px;
+  line-height: 304px;
+}
+.inspiration_container .inspiration_image_container:nth-child(19) {
+  height: 323px;
+  line-height: 323px;
+}
+.inspiration_container .inspiration_image_container:nth-child(20) {
+  height: 333px;
+  line-height: 333px;
+}
+.inspiration_container .inspiration_image_container:nth-child(21) {
+  height: 486px;
+  line-height: 486px;
+}
+.inspiration_container .inspiration_image_container:nth-child(22) {
+  height: 412px;
+  line-height: 412px;
+}
+.inspiration_container .inspiration_image_container:nth-child(23) {
+  height: 291px;
+  line-height: 291px;
+}
+.inspiration_container .inspiration_image_container:nth-child(24) {
+  height: 314px;
+  line-height: 314px;
+}
+.inspiration_container .inspiration_image_container:nth-child(25) {
+  height: 132px;
+  line-height: 132px;
+}
+
+.inspiration_section {
+  margin-bottom: 60px;
+  padding: 0 30px;
 }

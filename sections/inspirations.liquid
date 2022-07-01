@@ -1,5 +1,5 @@
 <section class="inspiration_section">
-  <div class="inspiration_container">
+  <div class="inspiration_container section_container">
       {%- for block in section.blocks -%}
         {%- if block.settings.image -%}
           <div class="inspiration_image_container">
@@ -17,17 +17,17 @@
             </noscript>
           </div>
       {%- endif -%}
-
     {%- endfor -%}
   </div>
 </section>
 
 
+
 {% schema %}
 {
   "name": "Inspiration",
-  "class": "shopify-section--slideshow",
-  "max_blocks": 14,
+  "class": "shopify-section--inspiration",
+  "max_blocks": 25,
   "settings": [
 
   ],
@@ -39,8 +39,7 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image",
-          "info": "1800 x 800px .jpg recommended"
+          "label": "Image"
         }
       ]
     }

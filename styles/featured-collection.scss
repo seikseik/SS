@@ -17,8 +17,9 @@
   }
 
   .CollectionItem__Wrapper{
-    height: 30vw;
+    height: 500px;
   }
+
 }
 
 .CollectionItem__Content{
@@ -27,5 +28,7 @@
 
 .CollectionItem{
   width:25%;
-  margin: 0 20px;
+  min-width: 25%;
+  max-width: 25%;
+  margin: 0 10px;
 }
