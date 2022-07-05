@@ -1,1 +1,116 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "1657017468746ff033": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "normal",
+        "image": "shopify:\/\/shop_images\/big_ISIL_GUN_AW21_IIDA_HOUSE5718_copia_7d8f2f4e-25e1-4921-afca-ca3d1d3add93.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 13,
+        "subheading": "",
+        "title": "",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "1657017549fd0d893c": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Schermata_2022-07-05_alle_12.42.11.png",
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "16570174446a32dc82": {
+      "type": "testimonials",
+      "blocks": {
+        "1657017444565665ab-0": {
+          "type": "testimonial",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo.png",
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        },
+        "1657017444565665ab-1": {
+          "type": "testimonial",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/pngaaa.com-5773597.png",
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        },
+        "1657017444565665ab-2": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1657017444565665ab-0",
+        "1657017444565665ab-1",
+        "1657017444565665ab-2"
+      ],
+      "settings": {
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#007167",
+        "text_color": "#ffffff"
+      }
+    },
+    "1657017501a449d11c": {
+      "type": "blog-posts",
+      "blocks": {
+        "1657017501489004c3-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "projects"
+          }
+        }
+      },
+      "block_order": [
+        "1657017501489004c3-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles"
+      }
+    },
+    "1657017457207ce0ca": {
+      "type": "image-with-text-block",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3b50f5e43252ac173b8a3b47217230b0.jpg",
+        "background": "#ff9f69",
+        "text_color": "#ffffff",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "GET IN TOUCH",
+        "button_link": "shopify:\/\/pages\/contact",
+        "show_parallax": true
+      }
+    }
+  },
+  "order": [
+    "1657017468746ff033",
+    "1657017549fd0d893c",
+    "main",
+    "16570174446a32dc82",
+    "1657017501a449d11c",
+    "1657017457207ce0ca"
+  ]
+}
