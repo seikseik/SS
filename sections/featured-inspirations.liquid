@@ -1,23 +1,29 @@
-<section class="inspiration_section">
-  <div class="inspiration_container section_container">
+<section class="featured_inspiration_section">
+  <div class="section_header">
+    <h2>{{section.settings.title}}</h2>
+  </div>
+  <div class="featured_inspiration_container section_container">
       {%- for block in section.blocks -%}
         {%- if block.settings.image -%}
-          <div class="inspiration_image_container">
+          <div class="featured_inspiration_image_container">
             {% assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
 
-            <img class="inspiration_image Image--lazyLoad hide-no-js Image--fadeIn"
+            <img class="featured_inspiration_image Image--lazyLoad hide-no-js Image--fadeIn"
                  data-src="{{ image_url }}"
                  data-optimumx="1.2"
                  data-widths="[400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200]"
                  data-sizes="auto"
                  alt="{{ block.settings.image.alt | escape }}">
-
             <noscript>
-              <img class="inspiration_image" src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image.alt | escape }}">
+              <img class="featured_inspiration_image" src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image.alt | escape }}">
             </noscript>
           </div>
       {%- endif -%}
     {%- endfor -%}
+  </div>
+
+  <div class="featured_inspiration_footer">
+    <a class="featured_link" href="/pages/inspirations">VIEW ALL</a>
   </div>
 </section>
 
@@ -29,7 +35,12 @@
   "class": "shopify-section--inspiration",
   "max_blocks": 25,
   "settings": [
-
+  {
+    "type": "text",
+    "id": "title",
+    "label": "Heading",
+    "default": "Inspirations"
+  }
   ],
   "blocks": [
     {

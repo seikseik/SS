@@ -10,6 +10,13 @@
   display: none;
 }
 
+.Header__FlexItem--fill{
+  justify-content: center;
+  .HorizontalList__Item{
+    margin: 6px 30px;
+  }
+}
+
 .dropdown_background{
   position: absolute;
   left: 0;
