@@ -51,8 +51,8 @@
         },
         "1657017444565665ab-2": {
           "type": "testimonial",
-          "disabled": true,
           "settings": {
+            "logo": "shopify:\/\/shop_images\/pngaaa.com-5773597.png",
             "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
           }
         }
