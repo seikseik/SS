@@ -1,0 +1,121 @@
+<section class="press_section">
+  <div class="press_container section_container">
+      {%- for block in section.blocks -%}
+
+        {%- if block.settings.image -%}
+          <div class="press_image_container">
+            {% assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+
+            <img class="press_image Image--lazyLoad hide-no-js Image--fadeIn"
+                 data-src="{{ image_url }}"
+                 data-optimumx="1.2"
+                 data-widths="[400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200]"
+                 data-sizes="auto"
+                 alt="{{ block.settings.image.alt | escape }}">
+
+            <noscript>
+              <img class="press_image" src="{{ block.settings.image | img_url: '1000x' }}" alt="{{ block.settings.image.alt | escape }}">
+            </noscript>
+
+            <a href="{% if block.settings.article_url != blank %}
+              {block.settings.article_url %}{% endif %}
+              {% if block.settings.article_pdf != blank %}
+              {block.settings.article_pdf %}{% endif %}
+            " class="press_image_dida">
+              <div class="press_title">
+                <h2>{{ block.settings.article_title}}</h2>
+                <span>{{ block.settings.article_author}}</span>
+              </div>
+              <div class="press_info_container">
+                <div class="press_info">
+                  <strong>{{ block.settings.article_headline}}</strong>
+                  {{ block.settings.article_date}}
+                </div>
+                <div class="press_icon">
+                  {% if block.settings.article_url != blank %}
+
+                    url
+                  {% endif %}
+                    {% if block.settings.article_pdf != blank %}
+                    pdf
+                  {% endif %}
+                </div>
+              </div>
+            </a>
+
+          </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "Inspiration",
+  "class": "shopify-section--inspiration",
+  "max_blocks": 50,
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "article_title",
+          "label": "Article Title"
+        },
+        {
+          "type": "text",
+          "id": "article_author",
+          "label": "Article Title"
+        },
+        {
+          "type": "text",
+          "id": "article_headline",
+          "label": "Article headline"
+        },
+        {
+          "type": "text",
+          "id": "article_date",
+          "label": "Article date"
+        },
+        {
+          "type": "url",
+          "id": "article_link",
+          "label": "Link URL"
+        },
+        {
+          "type": "url",
+          "id": "article_pdf",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Image",
+      "name": "Press",
+      "settings": {},
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

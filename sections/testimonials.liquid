@@ -22,19 +22,23 @@
     {%- for block in section.blocks -%}
       <div id="block-{{ block.id }}" class="Carousel__Cell Testimonial {% if forloop.first %}is-selected{% endif %}" {{ block.shopify_attributes }} data-slide-index="{{ forloop.index0 }}">
         <div class="Container">
+
+          {%- if block.settings.logo != blank -%}
+            <img class="Testimonial__Logo " src="{{ block.settings.logo | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}">
+          {%- endif -%}
+
           {%- if block.settings.quote != blank -%}
             <div class="Testimonial__Content">
               {{ block.settings.quote }}
             </div>
           {%- endif -%}
 
-          {%- if block.settings.logo != blank -%}
-            <img class="Testimonial__Logo hidden-lap-and-up" src="{{ block.settings.logo | img_url: '300x' }}" alt="{{ block.settings.logo.alt | escape }}">
-          {%- endif -%}
         </div>
       </div>
     {%- endfor -%}
   </div>
+
+  {% comment %}
 
   {%- if should_show_nav -%}
     <div class="TestimonialNav hidden-pocket">
@@ -45,6 +49,7 @@
       {%- endfor -%}
     </div>
   {%- endif -%}
+  {% endcomment %}
 </section>
 
 <style>

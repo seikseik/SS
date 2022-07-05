@@ -24,11 +24,14 @@
  */
 
  document.addEventListener("DOMContentLoaded", function(event) {
- var flkty = new Flickity(".collectionListCarousel",{
-   prevNextButtons: false,
-   pageDots: true,
-   wrapAround: true,
-   adaptiveHeight: false,
-   contain: true,
- });
+let coll = document.querySelector(".collectionListCarousel");
+  if( coll != undefined ){
+    var flkty = new Flickity(coll,{
+      prevNextButtons: false,
+      pageDots: true,
+      wrapAround: true,
+      adaptiveHeight: false,
+      contain: true,
+    });
+  }
 });

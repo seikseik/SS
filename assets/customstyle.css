@@ -468,104 +468,104 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 .inspiration_container .inspiration_image_container:nth-child(1) {
-  height: 278px;
-  line-height: 278px;
+  height: 128px;
+  line-height: 128px;
 }
 .inspiration_container .inspiration_image_container:nth-child(2) {
-  height: 400px;
-  line-height: 400px;
+  height: 267px;
+  line-height: 267px;
 }
 .inspiration_container .inspiration_image_container:nth-child(3) {
-  height: 474px;
-  line-height: 474px;
+  height: 193px;
+  line-height: 193px;
 }
 .inspiration_container .inspiration_image_container:nth-child(4) {
-  height: 179px;
-  line-height: 179px;
+  height: 231px;
+  line-height: 231px;
 }
 .inspiration_container .inspiration_image_container:nth-child(5) {
-  height: 251px;
-  line-height: 251px;
+  height: 114px;
+  line-height: 114px;
 }
 .inspiration_container .inspiration_image_container:nth-child(6) {
-  height: 429px;
-  line-height: 429px;
+  height: 108px;
+  line-height: 108px;
 }
 .inspiration_container .inspiration_image_container:nth-child(7) {
-  height: 150px;
-  line-height: 150px;
+  height: 443px;
+  line-height: 443px;
 }
 .inspiration_container .inspiration_image_container:nth-child(8) {
-  height: 258px;
-  line-height: 258px;
+  height: 178px;
+  line-height: 178px;
 }
 .inspiration_container .inspiration_image_container:nth-child(9) {
-  height: 274px;
-  line-height: 274px;
+  height: 402px;
+  line-height: 402px;
 }
 .inspiration_container .inspiration_image_container:nth-child(10) {
-  height: 496px;
-  line-height: 496px;
+  height: 293px;
+  line-height: 293px;
 }
 .inspiration_container .inspiration_image_container:nth-child(11) {
-  height: 147px;
-  line-height: 147px;
+  height: 110px;
+  line-height: 110px;
 }
 .inspiration_container .inspiration_image_container:nth-child(12) {
-  height: 415px;
-  line-height: 415px;
+  height: 443px;
+  line-height: 443px;
 }
 .inspiration_container .inspiration_image_container:nth-child(13) {
-  height: 238px;
-  line-height: 238px;
+  height: 241px;
+  line-height: 241px;
 }
 .inspiration_container .inspiration_image_container:nth-child(14) {
-  height: 186px;
-  line-height: 186px;
+  height: 361px;
+  line-height: 361px;
 }
 .inspiration_container .inspiration_image_container:nth-child(15) {
-  height: 333px;
-  line-height: 333px;
+  height: 183px;
+  line-height: 183px;
 }
 .inspiration_container .inspiration_image_container:nth-child(16) {
-  height: 461px;
-  line-height: 461px;
+  height: 399px;
+  line-height: 399px;
 }
 .inspiration_container .inspiration_image_container:nth-child(17) {
-  height: 141px;
-  line-height: 141px;
+  height: 185px;
+  line-height: 185px;
 }
 .inspiration_container .inspiration_image_container:nth-child(18) {
-  height: 363px;
-  line-height: 363px;
+  height: 498px;
+  line-height: 498px;
 }
 .inspiration_container .inspiration_image_container:nth-child(19) {
-  height: 337px;
-  line-height: 337px;
-}
-.inspiration_container .inspiration_image_container:nth-child(20) {
-  height: 121px;
-  line-height: 121px;
-}
-.inspiration_container .inspiration_image_container:nth-child(21) {
-  height: 309px;
-  line-height: 309px;
-}
-.inspiration_container .inspiration_image_container:nth-child(22) {
-  height: 451px;
-  line-height: 451px;
-}
-.inspiration_container .inspiration_image_container:nth-child(23) {
-  height: 430px;
-  line-height: 430px;
-}
-.inspiration_container .inspiration_image_container:nth-child(24) {
   height: 127px;
   line-height: 127px;
 }
+.inspiration_container .inspiration_image_container:nth-child(20) {
+  height: 283px;
+  line-height: 283px;
+}
+.inspiration_container .inspiration_image_container:nth-child(21) {
+  height: 393px;
+  line-height: 393px;
+}
+.inspiration_container .inspiration_image_container:nth-child(22) {
+  height: 471px;
+  line-height: 471px;
+}
+.inspiration_container .inspiration_image_container:nth-child(23) {
+  height: 340px;
+  line-height: 340px;
+}
+.inspiration_container .inspiration_image_container:nth-child(24) {
+  height: 215px;
+  line-height: 215px;
+}
 .inspiration_container .inspiration_image_container:nth-child(25) {
-  height: 172px;
-  line-height: 172px;
+  height: 366px;
+  line-height: 366px;
 }
 
 .inspiration_section {
@@ -609,4 +609,116 @@ h1, h2, h3, h4, h5 {
 }
 .featured_inspiration_container .featured_inspiration_image_container:last-child {
   margin-right: 0;
+}
+
+.about_image_section {
+  padding: 90px 30px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.about_image_text {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about_image_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
+.TestimonialList {
+  padding: 60px 30px;
+}
+.TestimonialList .flickity-page-dots {
+  display: block !important;
+  margin-top: 100px !important;
+}
+.TestimonialList .Testimonial__Logo {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.TestimonialList .Testimonial__Content {
+  font-size: 17px !important;
+}
+
+.section_SplitBlock {
+  padding: 90px 30px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.section_SplitBlock .FeatureText__ContentWrapper {
+  padding: 30px !important;
+  background: #ff9672;
+  color: white;
+  height: 100%;
+  text-align: center;
+}
+.section_SplitBlock .FeatureText__ContentWrapper .FeatureText__Content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: unset;
+  margin: unset;
+}
+.section_SplitBlock .split_title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "Klar semibold";
+}
+.section_SplitBlock .split_description {
+  margin-bottom: 30px;
+}
+.section_SplitBlock .split_link {
+  margin: 0 auto;
+  padding: 10px 10px;
+  border: 1px solid white;
+  width: 250px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Klar semibold";
+}
+
+.page-Press .PageHeader {
+  margin: 60px 0 !important;
+}
+.page-Press .SectionHeader__Heading {
+  text-align: left;
+}
+
+.press_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding-bottom: 90px;
+}
+
+.press_image_dida {
+  padding-top: 10px;
+}
+.press_image_dida .press_title h2 {
+  font-size: 22px;
+  margin-top: 10px;
+}
+.press_image_dida .press_title span {
+  font-size: 16px;
+}
+.press_image_dida .press_info_container {
+  margin-top: 20px;
+  display: flex;
+}
+.press_image_dida .press_info_container .press_info {
+  display: flex;
+}
+.press_image_dida .press_info_container .press_info strong {
+  font-family: "Klar semibold";
+  margin-right: 5px;
 }
