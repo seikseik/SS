@@ -1,1 +1,110 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "1657017468746ff033": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "subheading": "",
+        "title": "Tell your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
+      }
+    },
+    "1657017549fd0d893c": {
+      "type": "text-with-image",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Title",
+        "image_position": "right",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "16570174446a32dc82": {
+      "type": "testimonials",
+      "blocks": {
+        "1657017444565665ab-0": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        },
+        "1657017444565665ab-1": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        },
+        "1657017444565665ab-2": {
+          "type": "testimonial",
+          "settings": {
+            "quote": "<p>Share what your customers are saying about your products, your company...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1657017444565665ab-0",
+        "1657017444565665ab-1",
+        "1657017444565665ab-2"
+      ],
+      "settings": {
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "#eaeaea",
+        "text_color": "#1c1b1b"
+      }
+    },
+    "1657017501a449d11c": {
+      "type": "blog-posts",
+      "blocks": {
+        "1657017501489004c3-0": {
+          "type": "blog",
+          "settings": {
+            "blog": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657017501489004c3-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Blog posts",
+        "show_category": false,
+        "button_link": "",
+        "button_text": "View all articles"
+      }
+    },
+    "1657017457207ce0ca": {
+      "type": "image-with-text-block",
+      "settings": {
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "small",
+        "title": "Your story",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "show_parallax": true
+      }
+    }
+  },
+  "order": [
+    "1657017468746ff033",
+    "1657017549fd0d893c",
+    "main",
+    "16570174446a32dc82",
+    "1657017501a449d11c",
+    "1657017457207ce0ca"
+  ]
+}
