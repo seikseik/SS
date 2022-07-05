@@ -74,7 +74,10 @@
 
 .page-Press{
   .PageHeader{
-    margin: $gl*2 0 !important;
+    margin: $gl*2 auto !important;
+    padding: 0 $gl;
+    width:1300px;
+    max-width: 100%;
   }
   .SectionHeader__Heading{
     text-align: left;

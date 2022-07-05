@@ -515,104 +515,104 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 .inspiration_container .inspiration_image_container:nth-child(1) {
-  height: 368px;
-  line-height: 368px;
+  height: 399px;
+  line-height: 399px;
 }
 .inspiration_container .inspiration_image_container:nth-child(2) {
-  height: 491px;
-  line-height: 491px;
+  height: 327px;
+  line-height: 327px;
 }
 .inspiration_container .inspiration_image_container:nth-child(3) {
-  height: 443px;
-  line-height: 443px;
+  height: 321px;
+  line-height: 321px;
 }
 .inspiration_container .inspiration_image_container:nth-child(4) {
-  height: 285px;
-  line-height: 285px;
+  height: 444px;
+  line-height: 444px;
 }
 .inspiration_container .inspiration_image_container:nth-child(5) {
-  height: 370px;
-  line-height: 370px;
+  height: 375px;
+  line-height: 375px;
 }
 .inspiration_container .inspiration_image_container:nth-child(6) {
-  height: 480px;
-  line-height: 480px;
+  height: 357px;
+  line-height: 357px;
 }
 .inspiration_container .inspiration_image_container:nth-child(7) {
-  height: 230px;
-  line-height: 230px;
+  height: 382px;
+  line-height: 382px;
 }
 .inspiration_container .inspiration_image_container:nth-child(8) {
-  height: 418px;
-  line-height: 418px;
+  height: 318px;
+  line-height: 318px;
 }
 .inspiration_container .inspiration_image_container:nth-child(9) {
-  height: 265px;
-  line-height: 265px;
+  height: 149px;
+  line-height: 149px;
 }
 .inspiration_container .inspiration_image_container:nth-child(10) {
-  height: 243px;
-  line-height: 243px;
+  height: 273px;
+  line-height: 273px;
 }
 .inspiration_container .inspiration_image_container:nth-child(11) {
-  height: 304px;
-  line-height: 304px;
+  height: 177px;
+  line-height: 177px;
 }
 .inspiration_container .inspiration_image_container:nth-child(12) {
-  height: 292px;
-  line-height: 292px;
+  height: 280px;
+  line-height: 280px;
 }
 .inspiration_container .inspiration_image_container:nth-child(13) {
-  height: 455px;
-  line-height: 455px;
+  height: 387px;
+  line-height: 387px;
 }
 .inspiration_container .inspiration_image_container:nth-child(14) {
-  height: 385px;
-  line-height: 385px;
+  height: 198px;
+  line-height: 198px;
 }
 .inspiration_container .inspiration_image_container:nth-child(15) {
-  height: 362px;
-  line-height: 362px;
+  height: 262px;
+  line-height: 262px;
 }
 .inspiration_container .inspiration_image_container:nth-child(16) {
-  height: 494px;
-  line-height: 494px;
+  height: 238px;
+  line-height: 238px;
 }
 .inspiration_container .inspiration_image_container:nth-child(17) {
-  height: 320px;
-  line-height: 320px;
+  height: 314px;
+  line-height: 314px;
 }
 .inspiration_container .inspiration_image_container:nth-child(18) {
-  height: 381px;
-  line-height: 381px;
+  height: 153px;
+  line-height: 153px;
 }
 .inspiration_container .inspiration_image_container:nth-child(19) {
-  height: 337px;
-  line-height: 337px;
+  height: 114px;
+  line-height: 114px;
 }
 .inspiration_container .inspiration_image_container:nth-child(20) {
-  height: 125px;
-  line-height: 125px;
+  height: 115px;
+  line-height: 115px;
 }
 .inspiration_container .inspiration_image_container:nth-child(21) {
-  height: 213px;
-  line-height: 213px;
+  height: 394px;
+  line-height: 394px;
 }
 .inspiration_container .inspiration_image_container:nth-child(22) {
-  height: 108px;
-  line-height: 108px;
+  height: 116px;
+  line-height: 116px;
 }
 .inspiration_container .inspiration_image_container:nth-child(23) {
-  height: 203px;
-  line-height: 203px;
+  height: 224px;
+  line-height: 224px;
 }
 .inspiration_container .inspiration_image_container:nth-child(24) {
-  height: 242px;
-  line-height: 242px;
+  height: 159px;
+  line-height: 159px;
 }
 .inspiration_container .inspiration_image_container:nth-child(25) {
-  height: 330px;
-  line-height: 330px;
+  height: 359px;
+  line-height: 359px;
 }
 
 .inspiration_section {
@@ -734,7 +734,10 @@ h1, h2, h3, h4, h5 {
 }
 
 .page-Press .PageHeader {
-  margin: 60px 0 !important;
+  margin: 60px auto !important;
+  padding: 0 30px;
+  width: 1300px;
+  max-width: 100%;
 }
 .page-Press .SectionHeader__Heading {
   text-align: left;
