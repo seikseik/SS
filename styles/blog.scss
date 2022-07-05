@@ -38,3 +38,52 @@
     }
   }
 }
+
+
+
+.ArticleList_archive{
+  width:1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  .Grid__Cell{
+    padding-left: 0;
+  }
+}
+
+.ArticleListWrapper_archive{
+  padding-bottom: $gl*3;
+  .ArticleItem{
+    position: relative;
+    &:hover{
+      .ArticleItem__Content{
+        opacity: 1;
+      }
+    }
+  }
+  .ArticleItem__Title{
+    font-family: 'Klar semibold';
+    text-transform: uppercase;
+  }
+  .ArticleItem__Content{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    background: rgba(255,255,255,0.5);
+    margin: 0;
+    flex-direction: column;
+    @include center;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .2s ease;
+    pointer-events: none;
+  }
+}
+
+.blog__footer{
+  display: none;
+}

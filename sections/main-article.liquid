@@ -81,7 +81,15 @@
           </div>
         {%- endif -%}
 
-        <h1 class="Article__title">{{ article.title }}</h1>
+        <h1 class="Article__title">
+          {{ article.title }}
+        </h1>
+
+        {% if article.content != blank %}
+          <div class="Article__Body Rte">
+            {{ article.content }}
+          </div>
+        {% endif %}
 
         {% if article.metafields.my_fields.client != blank %}
           <p>Client: {{ article.metafields.my_fields.client }}</p>
@@ -95,20 +103,6 @@
           <p>Styling: {{ article.metafields.my_fields.photo }}</p>
         {% endif %}
 
-
-        {% if article.content != blank %}
-          <div class="Article__Body Rte">
-            {{ article.content }}
-          </div>
-        {% endif %}
-
-        <div class="back_link">
-          <a href="/blogs/stories">BACK TO ALL PROJECTS <br>
-            <svg width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6.87791 10.6465L7.78735 9.97856L2.48208 6.16198L18 6.16198L18 5.23515L2.48208 5.23514L7.78735 1.41857L6.87791 0.750641L5.7136e-07 5.69856L6.87791 10.6465Z" fill="white"/>
-            </svg>
-          </a>
-        </div>
       </div>
 
       <div class="Article__img_container">
