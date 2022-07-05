@@ -19,7 +19,7 @@
     <div class=" collectionListCarousel ">
       {%- for block in section.blocks -%}
         {%- assign collection = collections[block.settings.collection] -%}
-        {%- render 'collection-item', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
+        {%- render 'collection-item-custom', block: block, collection: collection, apply_overlay: block.settings.apply_overlay -%}
       {%- endfor -%}
     </div>
   {%- endif -%}

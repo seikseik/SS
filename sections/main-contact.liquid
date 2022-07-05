@@ -1,13 +1,22 @@
 <div class="contact_container">
 
-  <header class="PageHeader">
-    <div class="SectionHeader SectionHeader--center">
-      <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
-    </div>
-  </header>
-
 
   <div class="page_contact_wrapper">
+
+    <div class="custom_contact_container">
+      <div class="contact_row">
+        <span>Come visit us at:</span><div class="address">41 duke of york</div>
+      </div>
+      <div class="contact_row">
+        <span>Write us on whatsup at:</span><div class="address"> <a href="#"></a> </div>
+      </div>
+      <div class="contact_row">
+        <span>Press</span><div class="address">
+          <a href="mailto:"></a>
+        </div>
+      </div>
+    </div>
+
     <div class="contact_text">
       {{- page.content -}}
 
@@ -89,7 +98,7 @@
           <label class="Form__FloatingLabel">{{ 'contact.form.message' | t }}</label>
         </div>
 
-        <button type="submit" class="Form__Submit Button Button--primary Button--full">{{ 'contact.form.submit' | t }}</button>
+        <button type="submit" class="contact_button">{{ 'contact.form.submit' | t }}</button>
       {%- endform -%}
 
     </div>

@@ -1,0 +1,41 @@
+{%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
+
+<a href="{{ block.settings.button_link | default: collection.url }}" {{ block.shopify_attributes }} class="CollectionItem {% if section.settings.expand_collection %}CollectionItem--expand{% endif %} Carousel__Cell {% if forloop.first %}is-selected{% endif %}" data-slide-index="{{ forloop.index0 }}">
+
+
+  {%- capture mobile_size -%}750x{% if collection_image.height >= 960 %}960{% else %}{{ collection_image.height }}{% endif %}{%- endcapture -%}
+
+
+  {%- assign image_crop = block.settings.image_alignment | split: ' ' | last -%}
+
+
+
+  <div class="CollectionItem__Wrapper_custom CollectionItem__Wrapper--{{ section.settings.image_size }}">
+    <div class="CollectionItem__ImageWrapper_custom">
+
+
+      <div class="CollectionItem__Image_custom  Image--lazyLoad Image--zoomOut hide-no-js">
+
+          {% assign image_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+
+           <img class="Image--fadeIn Image--lazyLoad hide-no-js Image--fadeIn"
+                data-src="{{ image_url }}"
+                data-optimumx="1.2"
+                data-widths="[400, 600, 800, 1000, 1200, 1400, 1600, 1800, 2000, 2200]"
+                data-sizes="auto">
+
+        {%- if collection_image == nil -%}
+          <div class="PlaceholderBackground PlaceholderSvg--dark">
+            {%- capture image_name -%}lifestyle-{% cycle 'anchor': '1', '2' %}{%- endcapture -%}
+            {{ image_name | placeholder_svg_tag: 'PlaceholderBackground__Svg' }}
+          </div>
+        {%- endif -%}
+
+      </div>
+    </div>
+
+    <div class="collection_custom_dida">
+        <h2 class="category_title">{{ block.settings.title | default: collection.title | escape }}</h2>
+    </div>
+  </div>
+</a>

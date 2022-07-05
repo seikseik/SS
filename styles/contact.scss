@@ -8,4 +8,37 @@
   width: 1000px;
   max-width: 100%;
   margin: 0 auto;
+  min-height: 100vh;
+  @include center;
+  .Form__Input, .spr-form-input-text, .spr-form-input-email, .spr-form-input-textarea{
+    padding: 10px 0;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+  }
+  .Form__Textarea{
+    margin-top: 20px;
+    border-color: black;
+  }
+  .Form__FloatingLabel{
+    left: 0;
+    padding-left: 0;
+  }
+}
+
+.contact_button{
+  text-decoration: underline;
+}
+
+
+
+.page_contact_wrapper{
+  width:100%;
+}
+.custom_contact_container{
+  padding: $gl 0;
+  padding-top: 0;
+  border-bottom: 2px dotted black;
+  margin-bottom: $gl*2;
 }
