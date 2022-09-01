@@ -27,7 +27,7 @@
     margin-bottom: $gl;
   }
   .Testimonial__Content{
-    font-size: 17px !important;
+    font-size: $tm !important;
   }
 }
 
@@ -107,6 +107,38 @@
     .press_info{
       display: flex;
       strong{font-family: 'Klar semibold'; margin-right: 5px;}
+    }
+  }
+}
+
+.ImageHero__ContentOverlay{text-shadow: none;}
+
+
+.section_color_split{
+  padding: $gl*3 $gl;
+  width:1200px;
+  max-width: 100%;
+  margin: 0 auto;
+
+  .ImageHero{
+    width:50%;
+  }
+  .ImageHero__Wrapper{
+    width:50%;
+    .ImageHero__Block{
+      box-shadow: none;
+      @include center;
+      flex-direction: column;
+      text-align: center;
+      width:100%;
+      height: 100%;
+      max-width: unset;
+      margin-top: 0;
+      padding: $gl;
+      .ImageHero__BlockContent{
+        width: 400px;
+        max-width: 100%;
+      }
     }
   }
 }

@@ -5,6 +5,17 @@
   }
   .ArticleListWrapper{
     padding:0 $gl*2;
+    .ArticleList{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 30px;
+      margin-left: 0;
+      .Grid__Cell{
+        padding:0;
+        width:100%;
+
+      }
+    }
   }
   .ArticleItem__Content{
     .ArticleItem__Title{

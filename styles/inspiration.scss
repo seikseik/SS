@@ -50,6 +50,7 @@
 
 .featured_inspiration_container{
   display: flex;
+  padding: 0 $gl*2;
   .featured_inspiration_image_container{
     flex:1;
     margin-right: $gl/2;

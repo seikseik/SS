@@ -6,6 +6,8 @@
 body{
   font-weight: $sansL;
   font-family: $sansL;
+  font-size: $tm;
+  line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5{
@@ -25,6 +27,25 @@ h1, h2, h3, h4, h5{
   border-bottom:1px solid black;
   padding: 3px 0;
   height: unset;
+}
+
+.White_button{
+  font-family: "Klar semibold";
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 1px solid white;
+    background: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    transition: none;
+    &:before{
+      content: none !important;
+    }
+    &:hover{
+      background: white;
+      color:black;
+    }
 }
 
 .Black_button{
