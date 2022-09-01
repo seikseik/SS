@@ -1,1 +1,75 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_large": false
+      }
+    },
+    "1662041295cc4195aa": {
+      "type": "press",
+      "blocks": {
+        "1662041295897a972b-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/e69d20c9-e00b-4891-b82a-221b847bb4f0-at1000.jpg",
+            "article_title": "Article title",
+            "article_author": "By author name",
+            "article_headline": "Headline",
+            "article_date": "May 10 2022",
+            "article_link": "shopify:\/\/pages\/about",
+            "article_pdf": ""
+          }
+        },
+        "1662041295897a972b-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16-04-NUVO-Magazine-Winter-2013-fyi_page_11_image_0002.jpg",
+            "article_title": "Article title",
+            "article_author": "By Journalist name",
+            "article_headline": "Headline",
+            "article_date": "Month, 20, 2021",
+            "article_link": "",
+            "article_pdf": "shopify:\/\/pages\/contact"
+          }
+        },
+        "9889e316-14f6-45c6-bb8f-58c725d58be9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_aecff863-b0e4-4e8f-8f6a-e187b6f63d40.jpg",
+            "article_title": "Article title",
+            "article_author": "By Journalist name",
+            "article_headline": "Headline",
+            "article_date": "Month, 12, 2022",
+            "article_link": "shopify:\/\/pages\/about",
+            "article_pdf": ""
+          }
+        },
+        "cf8a6f64-b254-4000-a7b7-5de0296da0f7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChloeHotel_blog_9.jpg",
+            "article_title": "Article title",
+            "article_author": "By Journalist name",
+            "article_headline": "Headline",
+            "article_date": "Month, 30, 2022",
+            "article_link": "",
+            "article_pdf": "shopify:\/\/blogs\/notizie"
+          }
+        }
+      },
+      "block_order": [
+        "1662041295897a972b-0",
+        "1662041295897a972b-1",
+        "9889e316-14f6-45c6-bb8f-58c725d58be9",
+        "cf8a6f64-b254-4000-a7b7-5de0296da0f7"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1662041295cc4195aa"
+  ]
+}
