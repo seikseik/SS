@@ -24,12 +24,13 @@
         "1662041295897a972b-1": {
           "type": "image",
           "settings": {
-            "article_title": "",
-            "article_author": "",
-            "article_headline": "",
-            "article_date": "",
+            "image": "shopify:\/\/shop_images\/16-04-NUVO-Magazine-Winter-2013-fyi_page_11_image_0002.jpg",
+            "article_title": "Article title",
+            "article_author": "By Journalist name",
+            "article_headline": "Headline",
+            "article_date": "Month, 20, 2021",
             "article_link": "",
-            "article_pdf": ""
+            "article_pdf": "shopify:\/\/pages\/contact"
           }
         }
       },
