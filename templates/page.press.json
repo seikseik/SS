@@ -32,11 +32,24 @@
             "article_link": "",
             "article_pdf": "shopify:\/\/pages\/contact"
           }
+        },
+        "9889e316-14f6-45c6-bb8f-58c725d58be9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_aecff863-b0e4-4e8f-8f6a-e187b6f63d40.jpg",
+            "article_title": "Article title",
+            "article_author": "By Journalist name",
+            "article_headline": "Headline",
+            "article_date": "Month, 12, 2022",
+            "article_link": "shopify:\/\/pages\/about",
+            "article_pdf": ""
+          }
         }
       },
       "block_order": [
         "1662041295897a972b-0",
-        "1662041295897a972b-1"
+        "1662041295897a972b-1",
+        "9889e316-14f6-45c6-bb8f-58c725d58be9"
       ],
       "settings": {
       }
