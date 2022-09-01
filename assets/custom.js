@@ -23,7 +23,7 @@
  * }));
  */
 
- document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
 let coll = document.querySelector(".collectionListCarousel");
   if( coll != undefined ){
     var flkty = new Flickity(coll,{

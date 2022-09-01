@@ -72,6 +72,19 @@
 }
 
 
+.top_pattern{
+  background-size: contain;
+  width:100%;
+  &.pattern_press{
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='80' height='80' fill='%23DFEFEE'/%3E%3Cpath d='M40 40L80 1V80L40 40Z' fill='%23B5C4AD'/%3E%3Cpath d='M40 40L0 1V80L40 40Z' fill='%23B6DEDE'/%3E%3C/svg%3E%0A");
+    height: 30px;
+  }
+  &.pattern_projects{
+    background-image: url("data:image/svg+xml,%3Csvg width='156' height='84' viewBox='0 0 156 84' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='156' height='84' fill='%23506786'/%3E%3Cellipse cx='78' cy='51.5' rx='63' ry='29.5' fill='%236683A3'/%3E%3Ccircle cx='78' cy='51' r='28' fill='%23161614'/%3E%3C/svg%3E%0A");
+    height: 30px;
+  }
+}
+
 .page-Press{
   .PageHeader{
     margin: $gl*2 auto !important;
@@ -89,23 +102,28 @@
   grid-column-gap: $gl;
   grid-row-gap: $gl;
   padding-bottom: $gl*3;
+  .press_image{
+    width:100%;
+  }
 }
 .press_image_dida{
   padding-top: 10px;
   .press_title{
     h2{
-      font-size: 22px;
+      font-size: $tm;
       margin-top: 10px;
     }
     span{
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   .press_info_container{
     margin-top: 20px;
     display: flex;
+    justify-content: space-between;
     .press_info{
       display: flex;
+      font-size: 14px;
       strong{font-family: 'Klar semibold'; margin-right: 5px;}
     }
   }

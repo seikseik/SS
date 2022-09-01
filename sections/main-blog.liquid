@@ -1,3 +1,5 @@
+  <div class="top_pattern pattern_projects"></div>
+
 <div id="section-{{ section.id }}" class="Section" data-section-id="{{ section.id }}" data-section-type="article-list">
   {%- if blog.articles_count == 0 -%}
     <div class="EmptyState">
@@ -13,7 +15,7 @@
         <header class="PageHeader">
           <div class="SectionHeader SectionHeader--center">
             <h1 class="SectionHeader__Heading Heading u-h1">
-              {{- blog.title -}}
+              Interiors
 
               {%- if section.settings.show_rss -%}
                 <a href="{{ blog.url }}.atom" target="_blank" class="Blog__RssLink Link Link--secondary">{% render 'icon' with 'rss' %}</a>
@@ -94,6 +96,9 @@
       </div>
   </div>
 </div>
+
+<div class="top_pattern pattern_projects"></div>
+
 
 
 <style>

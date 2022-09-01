@@ -67,6 +67,11 @@ h1, h2, h3, h4, h5{
     }
 }
 
+.EmptyState__Action{
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 1;
+}
 
 .RoundButton, .flickity-prev-next-button{
   background: 0;

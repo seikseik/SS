@@ -1,14 +1,19 @@
-<div class="Container">
+
+{% if page.title == "Press" %}
+  <div class="top_pattern pattern_press"></div>
+{% endif %}
+
   <header class="PageHeader">
     <div class="SectionHeader SectionHeader--center">
       <h1 class="SectionHeader__Heading Heading u-h1">{{ page.title }}</h1>
     </div>
   </header>
 
+
   <div class="PageContainer">
     {{ page.content }}
   </div>
-</div>
+
 
 {% schema %}
 {

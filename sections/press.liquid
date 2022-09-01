@@ -32,8 +32,8 @@
                   {{ block.settings.article_date}}
                 </div>
                 <div class="press_icon">
-                  {% if block.settings.article_url != blank %}
-                    url
+                  {% if block.settings.article_link != blank %}
+                  url
                   {% endif %}
                     {% if block.settings.article_pdf != blank %}
                     pdf
@@ -76,7 +76,7 @@
         {
           "type": "text",
           "id": "article_author",
-          "label": "Article Title"
+          "label": "Article author"
         },
         {
           "type": "text",
@@ -91,12 +91,12 @@
         {
           "type": "url",
           "id": "article_link",
-          "label": "Link URL"
+          "label": "Pdf Link (add it to the media library and then copy the link)"
         },
         {
           "type": "url",
           "id": "article_pdf",
-          "label": "Link URL"
+          "label": "Article Link"
         }
       ]
     }
