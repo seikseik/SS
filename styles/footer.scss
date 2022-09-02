@@ -1,3 +1,39 @@
 .shopify-section--bordered + .shopify-section--footer{
   border-top: none;
 }
+
+.footer_container_wrapper{
+  padding: 0 $gl;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer_container{
+  display: flex;
+  width:100%;
+}
+.footer_block{
+  width:25%;
+  font-size: $txs;
+  .Footer__Title{
+  font-size: $txs;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  }
+}
+
+.Footer__Aside{
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  width:25%;
+  .Footer__Social{
+    margin-top: 0;
+    margin-bottom: $gl/2;
+    .Icon{
+      width:20px;
+      height: 20px;
+    }
+  }
+}

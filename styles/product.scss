@@ -31,8 +31,35 @@
     color:white;
   }
 }
+.product_collection{
+  font-size: $ts;
+}
+.ProductForm__Variants label{
+  font-size: $ts;
+}
+.ProductMeta__Price{font-size: $tm;}
+.ProductMeta__Description{
+  .Rte{
+    font-size: $ts;
+  }
+}
+.ProductForm__Label{font-size: $ts;}
+.ProductForm__BuyButtons button{
+  font-family: $sansL;
+}
 
-// .Product__Gallery{
-//   display: flex;
-//   flex-direction: row-reverse;
-// }
+.QuantitySelector--large .QuantitySelector__CurrentQuantity{
+  font-size: $ts;
+}
+.QuantitySelector{
+  button, input{
+    font-size: $ts;
+  }
+}
+
+.RoundButton, .flickity-prev-next-button{
+  background: #f0f0f0;
+}
+.RoundButton:not([aria-expanded=true]):hover{
+  color:black;
+}

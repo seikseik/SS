@@ -3,7 +3,7 @@
 {% endif %}
 
 <footer id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %}" role="contentinfo">
-  <div class="Container">
+  <div class="footer_container_wrapper">
     {%- if section.blocks.size > 0 -%}
       <div class="footer_container">
         {%- for block in section.blocks -%}
@@ -19,9 +19,11 @@
                   </div>
                 {%- endif -%}
 
+                {% comment %}
                 {%- if block.settings.show_social_media -%}
                   {% render 'social-media', class: 'Footer__Social', spacing: 'loose' %}
                 {%- endif -%}
+                {% endcomment %}
 
               {%- when 'links' -%}
                 {%- assign linklist = linklists[block.settings.menu] -%}
@@ -141,9 +143,10 @@
         </div>
       {%- endif -%}
 
+        {% render 'social-media', class: 'Footer__Social', spacing: 'loose' %}
+
       <div class="Footer__Copyright">
         <a href="{{ routes.root_url }}" class="Footer__StoreName Heading u-h7 Link Link--secondary">© {{ shop.name }}</a>
-        <p class="Footer__ThemeAuthor">{{ powered_by_link }}</p>
       </div>
 
       {%- if section.settings.show_payment_methods -%}

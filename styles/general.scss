@@ -14,6 +14,8 @@ h1, h2, h3, h4, h5{
   font-family: $sansL;
 }
 
+.Button, .shopify-payment-button__button--unbranded, input.spr-button-primary, .spr-summary-actions-newreview, .spr-button-primary:not(input), .spr-pagination-prev > a, .spr-pagination-next > a{letter-spacing: normal; font-weight: normal;}
+
 
 .SectionHeader__Heading{
   font-size: 35px !important;
