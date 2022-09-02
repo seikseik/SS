@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .section_container {
-  width: 1300px;
+  width: 1200px;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
@@ -565,104 +565,104 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 .inspiration_container .inspiration_image_container:nth-child(1) {
-  height: 117px;
-  line-height: 117px;
+  height: 334px;
+  line-height: 334px;
 }
 .inspiration_container .inspiration_image_container:nth-child(2) {
-  height: 500px;
-  line-height: 500px;
+  height: 296px;
+  line-height: 296px;
 }
 .inspiration_container .inspiration_image_container:nth-child(3) {
-  height: 378px;
-  line-height: 378px;
+  height: 445px;
+  line-height: 445px;
 }
 .inspiration_container .inspiration_image_container:nth-child(4) {
-  height: 249px;
-  line-height: 249px;
+  height: 186px;
+  line-height: 186px;
 }
 .inspiration_container .inspiration_image_container:nth-child(5) {
-  height: 347px;
-  line-height: 347px;
+  height: 351px;
+  line-height: 351px;
 }
 .inspiration_container .inspiration_image_container:nth-child(6) {
-  height: 169px;
-  line-height: 169px;
-}
-.inspiration_container .inspiration_image_container:nth-child(7) {
   height: 221px;
   line-height: 221px;
 }
+.inspiration_container .inspiration_image_container:nth-child(7) {
+  height: 325px;
+  line-height: 325px;
+}
 .inspiration_container .inspiration_image_container:nth-child(8) {
-  height: 381px;
-  line-height: 381px;
+  height: 272px;
+  line-height: 272px;
 }
 .inspiration_container .inspiration_image_container:nth-child(9) {
-  height: 368px;
-  line-height: 368px;
+  height: 364px;
+  line-height: 364px;
 }
 .inspiration_container .inspiration_image_container:nth-child(10) {
-  height: 444px;
-  line-height: 444px;
+  height: 319px;
+  line-height: 319px;
 }
 .inspiration_container .inspiration_image_container:nth-child(11) {
-  height: 159px;
-  line-height: 159px;
+  height: 157px;
+  line-height: 157px;
 }
 .inspiration_container .inspiration_image_container:nth-child(12) {
-  height: 234px;
-  line-height: 234px;
+  height: 456px;
+  line-height: 456px;
 }
 .inspiration_container .inspiration_image_container:nth-child(13) {
-  height: 451px;
-  line-height: 451px;
+  height: 495px;
+  line-height: 495px;
 }
 .inspiration_container .inspiration_image_container:nth-child(14) {
-  height: 330px;
-  line-height: 330px;
+  height: 394px;
+  line-height: 394px;
 }
 .inspiration_container .inspiration_image_container:nth-child(15) {
-  height: 474px;
-  line-height: 474px;
+  height: 198px;
+  line-height: 198px;
 }
 .inspiration_container .inspiration_image_container:nth-child(16) {
-  height: 125px;
-  line-height: 125px;
+  height: 174px;
+  line-height: 174px;
 }
 .inspiration_container .inspiration_image_container:nth-child(17) {
-  height: 449px;
-  line-height: 449px;
+  height: 441px;
+  line-height: 441px;
 }
 .inspiration_container .inspiration_image_container:nth-child(18) {
-  height: 329px;
-  line-height: 329px;
+  height: 371px;
+  line-height: 371px;
 }
 .inspiration_container .inspiration_image_container:nth-child(19) {
-  height: 307px;
-  line-height: 307px;
+  height: 431px;
+  line-height: 431px;
 }
 .inspiration_container .inspiration_image_container:nth-child(20) {
-  height: 245px;
-  line-height: 245px;
+  height: 359px;
+  line-height: 359px;
 }
 .inspiration_container .inspiration_image_container:nth-child(21) {
-  height: 488px;
-  line-height: 488px;
+  height: 310px;
+  line-height: 310px;
 }
 .inspiration_container .inspiration_image_container:nth-child(22) {
-  height: 138px;
-  line-height: 138px;
+  height: 331px;
+  line-height: 331px;
 }
 .inspiration_container .inspiration_image_container:nth-child(23) {
-  height: 314px;
-  line-height: 314px;
+  height: 375px;
+  line-height: 375px;
 }
 .inspiration_container .inspiration_image_container:nth-child(24) {
-  height: 419px;
-  line-height: 419px;
+  height: 316px;
+  line-height: 316px;
 }
 .inspiration_container .inspiration_image_container:nth-child(25) {
-  height: 498px;
-  line-height: 498px;
+  height: 131px;
+  line-height: 131px;
 }
 
 .inspiration_section {
