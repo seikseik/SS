@@ -111,6 +111,7 @@
       ],
       "settings": {
         "image_size": "normal",
+        "title": "Shop by Category",
         "add_spacing": true,
         "expand_collection": false,
         "stack_on_mobile": false,
@@ -138,11 +139,50 @@
         "button_link": "",
         "button_text": ""
       }
+    },
+    "16621091195d3daaad": {
+      "type": "featured-inspirations",
+      "blocks": {
+        "166210911986554609-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2c15f61f48712a16b234d7fae19c84bc.jpg"
+          }
+        },
+        "166210911986554609-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3d8181ad857f4bc9843e441538b88682.jpg"
+          }
+        },
+        "989f39f5-edeb-4360-b3b1-114c7196e52a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_3435.jpg"
+          }
+        },
+        "b9d2384d-5e84-4b48-80d3-928965bcedf4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Larusi_Imperfect_Beauty_03.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "166210911986554609-0",
+        "166210911986554609-1",
+        "989f39f5-edeb-4360-b3b1-114c7196e52a",
+        "b9d2384d-5e84-4b48-80d3-928965bcedf4"
+      ],
+      "settings": {
+        "title": "Inspirations"
+      }
     }
   },
   "order": [
     "slideshow",
     "165478975962e1088a",
-    "165398808455c75b62"
+    "165398808455c75b62",
+    "16621091195d3daaad"
   ]
 }
