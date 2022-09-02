@@ -21,6 +21,23 @@
   }
 }
 
+
+.Header__Icon .Icon--search-desktop{
+  width:18px;
+}
+.Header__Icon .Icon--cart-desktop{
+  width:20px;
+  height: 20px;
+}
+.Header__Icon + .Header__Icon{
+  margin-left: 20px;
+}
+
+.Search__Inner{
+  padding: $gl;
+}
+
+
 .dropdown_background{
   position: absolute;
   left: 0;

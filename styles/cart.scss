@@ -21,3 +21,27 @@
   padding: $gl;
   min-height: 87px;
 }
+
+.CartItem__Title{
+  font-size: $ts;
+}
+.CartItem__Variant{
+  font-size: $txs;
+  color: grey;
+}
+.CartItem__Price{
+  font-size: $txs;
+}
+.CartItem__Actions{
+  margin-top: 10px;
+}
+.CartItem__QuantitySelector{
+  .QuantitySelector{
+    border: unset;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+  }
+  .QuantitySelector__Button{
+    padding: 5px 10px;
+  }
+}

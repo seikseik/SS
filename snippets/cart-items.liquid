@@ -91,11 +91,30 @@
           {%- endif -%}
         </div>
 
+        <div class="CartItem__PriceList">
+          {%- if line_item.original_price != line_item.final_price -%}
+            <span class="CartItem__Price Price Price--highlight">{{ line_item.final_price | money }}</span>
+            <span class="CartItem__OriginalPrice Price Price--compareAt">{{ line_item.original_price | money }}</span>
+          {%- else -%}
+            <span class="CartItem__Price Price">{{ line_item.final_price | money }}</span>
+          {%- endif -%}
+
+          {%- if line_item.line_level_discount_allocations != blank -%}
+            <ul class="CartItem__DiscountList">
+              {%- for discount_allocation in line_item.line_level_discount_allocations -%}
+                <li class="CartItem__Discount">
+                  {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        </div>
+
+        {% comment %}
         {%- capture item_actions -%}
           <div class="CartItem__Actions Heading Text--subdued" style="text-align: center">
             <div class="CartItem__QuantitySelector">
               <div class="QuantitySelector">
-
 
                 <input type="text" name="updates[]" id="updates_{{ line_item.key }}" class="QuantitySelector__CurrentQuantity" pattern="[0-9]*" data-line="{{ forloop.index }}" value="{{ line_item.quantity }}">
                 <div class="CartItem__QuantityMarks">
@@ -116,27 +135,11 @@
 
           </div>
         {%- endcapture -%}
+        {% endcomment %}
 
         {{ item_actions }}
 
-        <div class="CartItem__PriceList">
-          {%- if line_item.original_price != line_item.final_price -%}
-            <span class="CartItem__Price Price Price--highlight">{{ line_item.final_price | money }}</span>
-            <span class="CartItem__OriginalPrice Price Price--compareAt">{{ line_item.original_price | money }}</span>
-          {%- else -%}
-            <span class="CartItem__Price Price">{{ line_item.final_price | money }}</span>
-          {%- endif -%}
 
-          {%- if line_item.line_level_discount_allocations != blank -%}
-            <ul class="CartItem__DiscountList">
-              {%- for discount_allocation in line_item.line_level_discount_allocations -%}
-                <li class="CartItem__Discount">
-                  {%- render 'icon' with 'sale' -%}{{ discount_allocation.discount_application.title }}: -{{ discount_allocation.amount | money }}
-                </li>
-              {%- endfor -%}
-            </ul>
-          {%- endif -%}
-        </div>
 
         <a href="{{ routes.cart_change_url }}?quantity=0&line={{ forloop.index }}" class="CartItem__Remove Link Link--underline Link--underlineShort" data-quantity="0" data-line="{{ forloop.index }}" data-action="remove-item">{{ 'cart.items.remove' | t }}</a>
 
