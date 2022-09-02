@@ -65,6 +65,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "blocks": {
         "3a911724-3f45-4c86-80ef-d8ec50d3649a": {
           "type": "product",
