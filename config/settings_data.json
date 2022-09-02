@@ -41,6 +41,8 @@
     "cart_enable_notes": false,
     "cart_show_free_shipping_threshold": false,
     "cart_free_shipping_threshold": "50",
+    "social_pinterest": "https:\/\/www.pinterest.it\/therugcompany\/",
+    "social_instagram": "https:\/\/www.instagram.com\/suzanne_sharp\/",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
@@ -119,12 +121,6 @@
               "menu": "footer-service-menu"
             }
           },
-          "2ff22f18-0e7a-4372-b937-022ac28bf401": {
-            "type": "links",
-            "settings": {
-              "menu": ""
-            }
-          },
           "287c786e-32ad-48c0-a766-5fc310e2cadb": {
             "type": "text",
             "settings": {
@@ -137,7 +133,6 @@
         "block_order": [
           "c2592b19-74a1-4fcc-abcf-ab3b517a4bac",
           "52caf387-01a0-4f00-bb85-5870093945b7",
-          "2ff22f18-0e7a-4372-b937-022ac28bf401",
           "287c786e-32ad-48c0-a766-5fc310e2cadb"
         ],
         "settings": {
