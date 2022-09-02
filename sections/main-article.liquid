@@ -17,9 +17,10 @@
 
 <div class="top_pattern pattern_projects"></div>
 
+<article class="Article project_page_container" data-section-id="{{ section.id }}" data-section-type="articleSlideshow">
 
-<article class="Article" data-section-id="{{ section.id }}" data-section-type="articleSlideshow">
   <aside class="ArticleToolbar hidden-phone">
+
     <div class="ArticleToolbar__Left">
       <span class="Heading Text--subdued u-h8 hidden-tablet">{{ 'blog.article.now_reading' | t }}</span>
       <span class="ArticleToolbar__ArticleTitle Heading u-h7">{{ article.title }}</span>
@@ -94,41 +95,73 @@
           </div>
         {% endif %}
 
-        {% if article.metafields.my_fields.client != blank %}
-          <p>Client: {{ article.metafields.my_fields.client }}</p>
-        {% endif %}
 
-        {% if article.metafields.my_fields.styling != blank %}
-          <p> Photography: {{ article.metafields.my_fields.styling }}</p>
-        {% endif %}
+        <div class="Article_info">
+          {% if article.metafields.custom.category != blank %}
+            <p> <span>Category: </span> {{ article.metafields.custom.category }}</p>
+          {% endif %}
 
-        {% if article.metafields.my_fields.photo != blank %}
-          <p>Styling: {{ article.metafields.my_fields.photo }}</p>
-        {% endif %}
+          {% if article.metafields.custom.year != blank %}
+            <p>|  <span>Year: </span> {{ article.metafields.custom.year }}</p>
+          {% endif %}
+
+          {% if article.metafields.custom.location != blank %}
+            <p>| <span>Location: </span> {{ article.metafields.custom.location }}</p>
+          {% endif %}
+        </div>
+
+
 
       </div>
 
-      <div class="Article__img_container">
+      <div class="project_image_grid">
 
-        <div class="article_slideshow">
-          {% if article.metafields.my_fields.foto_progetto_1 != blank %}
-                {{ article.metafields.my_fields.foto_progetto_1 | img_url: "900x" | img_tag }}
-          {% endif %}
-          {% if article.metafields.my_fields.foto_progetto_2 != blank %}
-                {{ article.metafields.my_fields.foto_progetto_2 | img_url: "900x" | img_tag }}
-          {% endif %}
-          {% if article.metafields.my_fields.foto_progetto_3 != blank %}
-                {{ article.metafields.my_fields.foto_progetto_3 | img_url: "900x" | img_tag }}
-          {% endif %}
+        {% if article.metafields.custom.image_1 != blank %}
+        <div class="project_image_grid_card">
+            {{ article.metafields.custom.image_1 | img_url: "900x" | img_tag }}
         </div>
+        {% endif %}
+        {% if article.metafields.custom.image_2 != blank %}
+        <div class="project_image_grid_card">
+            {{ article.metafields.custom.image_2 | img_url: "900x" | img_tag }}
+        </div>
+        {% endif %}
+        {% if article.metafields.custom.image_3 != blank %}
+        <div class="project_image_grid_card">
+            {{ article.metafields.custom.image_3 | img_url: "900x" | img_tag }}
+        </div>
+        {% endif %}
+        {% if article.metafields.custom.image_4 != blank %}
+        <div class="project_image_grid_card">
+            {{ article.metafields.custom.image_4 | img_url: "900x" | img_tag }}
+        </div>
+        {% endif %}
+        {% if article.metafields.custom.image_5 != blank %}
+        <div class="project_image_grid_card">
+            {{ article.metafields.custom.image_5 | img_url: "900x" | img_tag }}
+        </div>
+        {% endif %}
+        {% if article.metafields.custom.image_6 != blank %}
+        <div class="project_image_grid_card">
+            {{ article.metafields.custom.image_6 | img_url: "900x" | img_tag }}
+        </div>
+        {% endif %}
+        {% if article.metafields.custom.image_7 != blank %}
+        <div class="project_image_grid_card">
+            {{ article.metafields.custom.image_7 | img_url: "900x" | img_tag }}
+        </div>
+        {% endif %}
+        {% if article.metafields.custom.image_8 != blank %}
+        <div class="project_image_grid_card">
+            {{ article.metafields.custom.image_8 | img_url: "900x" | img_tag }}
+        </div>
+        {% endif %}
+
       </div>
 
 
 
       {%- capture article_footer -%}
-        {%- if section.settings.show_author -%}
-          <span class="Article__Author Heading Text--subdued u-h6">{{ 'blog.article.written_by' | t: author: article.author }}</span>
-        {%- endif -%}
 
         {%- if section.settings.show_share_buttons -%}
           <div class="Article__ShareButtons ShareButtons">

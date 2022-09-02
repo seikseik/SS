@@ -157,6 +157,7 @@
 
         {%- if product.template_suffix != 'coming-soon' -%}
           <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
+            <span class="price_spacing">-</span>  
             {%- if product.compare_at_price > product.price -%}
               {%- if settings.currency_code_enabled -%}
                 <span class="product_price Price Price--highlight Text--subdued">{{ product.price | money_with_currency }}</span>
