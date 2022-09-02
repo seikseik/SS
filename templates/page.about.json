@@ -78,6 +78,48 @@
         "link_text": "READ MORE",
         "link_url": ""
       }
+    },
+    "1662109811e26c5ff4": {
+      "type": "featured-press",
+      "blocks": {
+        "166210981172032f1d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sku2035_dc_js_key_shadow_560x840px_in-situ_v2.jpg",
+            "press_title": "Article title",
+            "press_author": "By Journalist name",
+            "press_headline": "Headline",
+            "press_date": "May, 20, 2022"
+          }
+        },
+        "166210981172032f1d-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image-1.png",
+            "press_title": "Article title",
+            "press_author": "Article author",
+            "press_headline": "Article headline",
+            "press_date": "Article date"
+          }
+        },
+        "818a04c9-81de-404b-97cd-034256a37aa2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_aecff863-b0e4-4e8f-8f6a-e187b6f63d40.jpg",
+            "press_title": "Article title",
+            "press_author": "Article author",
+            "press_headline": "Article headline",
+            "press_date": "Article date"
+          }
+        }
+      },
+      "block_order": [
+        "166210981172032f1d-0",
+        "166210981172032f1d-1",
+        "818a04c9-81de-404b-97cd-034256a37aa2"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -85,6 +127,7 @@
     "main",
     "16621092115c164cc0",
     "16570174446a32dc82",
-    "1662109268563f465f"
+    "1662109268563f465f",
+    "1662109811e26c5ff4"
   ]
 }
