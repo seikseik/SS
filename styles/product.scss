@@ -63,3 +63,15 @@
 .RoundButton:not([aria-expanded=true]):hover{
   color:black;
 }
+
+
+// recently viewed
+.recent_prod_section{
+  margin: 150px auto 90px;
+  .SectionHeader{
+    margin: 60px auto !important;
+    padding: 0 30px;
+    width: 1200px;
+    max-width: 100%;
+  }
+}

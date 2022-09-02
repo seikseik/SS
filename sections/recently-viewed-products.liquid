@@ -18,12 +18,10 @@
 }
 {%- endcapture -%}
 
-<section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="recently-viewed-products" data-section-settings='{{ section_settings }}'>
+<section class="recent_prod_section Section" data-section-id="{{ section.id }}" data-section-type="recently-viewed-products" data-section-settings='{{ section_settings }}'>
   {%- if section.settings.title != blank -%}
-    <header class="SectionHeader SectionHeader--center">
-      <div class="Container">
+    <header class="SectionHeader">
         <h3 class="SectionHeader__Heading Heading u-h3">{{ section.settings.title | escape }}</h3>
-      </div>
     </header>
   {%- endif -%}
 
@@ -52,7 +50,7 @@
 {% schema %}
 {
   "name": "Recently viewed products",
-  "class": "shopify-section--bordered shopify-section--hidden",
+  "class": "shopify-section--hidden recent_prod_section",
   "settings": [
     {
       "type": "text",

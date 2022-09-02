@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .SectionHeader__Heading {
-  font-size: 35px !important;
+  font-size: 30px !important;
   font-family: "Klar semibold";
 }
 
@@ -341,7 +341,7 @@ h1, h2, h3, h4, h5 {
 
 .ProductMeta__Title {
   font-family: "Klar semibold";
-  font-size: 35px !important;
+  font-size: 30px !important;
 }
 
 .ProductForm__AddToCart {
@@ -401,6 +401,16 @@ h1, h2, h3, h4, h5 {
 
 .RoundButton:not([aria-expanded=true]):hover {
   color: black;
+}
+
+.recent_prod_section {
+  margin: 150px auto 90px;
+}
+.recent_prod_section .SectionHeader {
+  margin: 60px auto !important;
+  padding: 0 30px;
+  width: 1200px;
+  max-width: 100%;
 }
 
 .section_header {
@@ -652,104 +662,104 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 .inspiration_container .inspiration_image_container:nth-child(1) {
-  height: 186px;
-  line-height: 186px;
+  height: 338px;
+  line-height: 338px;
 }
 .inspiration_container .inspiration_image_container:nth-child(2) {
-  height: 220px;
-  line-height: 220px;
+  height: 149px;
+  line-height: 149px;
 }
 .inspiration_container .inspiration_image_container:nth-child(3) {
-  height: 152px;
-  line-height: 152px;
+  height: 347px;
+  line-height: 347px;
 }
 .inspiration_container .inspiration_image_container:nth-child(4) {
-  height: 445px;
-  line-height: 445px;
+  height: 442px;
+  line-height: 442px;
 }
 .inspiration_container .inspiration_image_container:nth-child(5) {
-  height: 423px;
-  line-height: 423px;
+  height: 140px;
+  line-height: 140px;
 }
 .inspiration_container .inspiration_image_container:nth-child(6) {
-  height: 499px;
-  line-height: 499px;
+  height: 232px;
+  line-height: 232px;
 }
 .inspiration_container .inspiration_image_container:nth-child(7) {
-  height: 277px;
-  line-height: 277px;
+  height: 245px;
+  line-height: 245px;
 }
 .inspiration_container .inspiration_image_container:nth-child(8) {
-  height: 446px;
-  line-height: 446px;
+  height: 211px;
+  line-height: 211px;
 }
 .inspiration_container .inspiration_image_container:nth-child(9) {
-  height: 197px;
-  line-height: 197px;
+  height: 158px;
+  line-height: 158px;
 }
 .inspiration_container .inspiration_image_container:nth-child(10) {
-  height: 437px;
-  line-height: 437px;
+  height: 286px;
+  line-height: 286px;
 }
 .inspiration_container .inspiration_image_container:nth-child(11) {
-  height: 266px;
-  line-height: 266px;
+  height: 307px;
+  line-height: 307px;
 }
 .inspiration_container .inspiration_image_container:nth-child(12) {
-  height: 322px;
-  line-height: 322px;
+  height: 248px;
+  line-height: 248px;
 }
 .inspiration_container .inspiration_image_container:nth-child(13) {
-  height: 220px;
-  line-height: 220px;
+  height: 292px;
+  line-height: 292px;
 }
 .inspiration_container .inspiration_image_container:nth-child(14) {
-  height: 142px;
-  line-height: 142px;
+  height: 243px;
+  line-height: 243px;
 }
 .inspiration_container .inspiration_image_container:nth-child(15) {
-  height: 249px;
-  line-height: 249px;
+  height: 406px;
+  line-height: 406px;
 }
 .inspiration_container .inspiration_image_container:nth-child(16) {
-  height: 142px;
-  line-height: 142px;
+  height: 486px;
+  line-height: 486px;
 }
 .inspiration_container .inspiration_image_container:nth-child(17) {
-  height: 192px;
-  line-height: 192px;
+  height: 309px;
+  line-height: 309px;
 }
 .inspiration_container .inspiration_image_container:nth-child(18) {
-  height: 466px;
-  line-height: 466px;
+  height: 195px;
+  line-height: 195px;
 }
 .inspiration_container .inspiration_image_container:nth-child(19) {
-  height: 472px;
-  line-height: 472px;
+  height: 261px;
+  line-height: 261px;
 }
 .inspiration_container .inspiration_image_container:nth-child(20) {
-  height: 326px;
-  line-height: 326px;
+  height: 253px;
+  line-height: 253px;
 }
 .inspiration_container .inspiration_image_container:nth-child(21) {
-  height: 159px;
-  line-height: 159px;
+  height: 416px;
+  line-height: 416px;
 }
 .inspiration_container .inspiration_image_container:nth-child(22) {
-  height: 117px;
-  line-height: 117px;
+  height: 403px;
+  line-height: 403px;
 }
 .inspiration_container .inspiration_image_container:nth-child(23) {
-  height: 231px;
-  line-height: 231px;
+  height: 229px;
+  line-height: 229px;
 }
 .inspiration_container .inspiration_image_container:nth-child(24) {
-  height: 207px;
-  line-height: 207px;
+  height: 356px;
+  line-height: 356px;
 }
 .inspiration_container .inspiration_image_container:nth-child(25) {
-  height: 215px;
-  line-height: 215px;
+  height: 203px;
+  line-height: 203px;
 }
 
 .inspiration_section {
