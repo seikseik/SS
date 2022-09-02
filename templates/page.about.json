@@ -13,23 +13,22 @@
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>"
       }
     },
-    "1657017549fd0d893c": {
-      "type": "text-with-image",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "image": "shopify:\/\/shop_images\/Schermata_2022-07-05_alle_12.42.11.png",
-        "image_position": "right",
-        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "link_text": "",
-        "link_url": ""
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
       "settings": {
         "show_large": false
+      }
+    },
+    "16621092115c164cc0": {
+      "type": "text-with-image-custom",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Schermata_2022-07-05_alle_12.42.11.png",
+        "image_two": "shopify:\/\/shop_images\/Image_aecff863-b0e4-4e8f-8f6a-e187b6f63d40.jpg",
+        "image_three": "shopify:\/\/shop_images\/Image-1.jpg",
+        "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+        "link_text": "",
+        "link_url": ""
       }
     },
     "16570174446a32dc82": {
@@ -69,48 +68,23 @@
         "text_color": "#ffffff"
       }
     },
-    "1657017501a449d11c": {
-      "type": "blog-posts",
-      "blocks": {
-        "1657017501489004c3-0": {
-          "type": "blog",
-          "settings": {
-            "blog": "projects"
-          }
-        }
-      },
-      "block_order": [
-        "1657017501489004c3-0"
-      ],
+    "1662109268563f465f": {
+      "type": "split-block",
       "settings": {
-        "subheading": "",
-        "title": "Blog posts",
-        "show_category": false,
-        "button_link": "",
-        "button_text": "View all articles"
-      }
-    },
-    "1657017457207ce0ca": {
-      "type": "image-with-text-block",
-      "settings": {
+        "title": "Title",
         "image": "shopify:\/\/shop_images\/3b50f5e43252ac173b8a3b47217230b0.jpg",
-        "background": "#ff9f69",
-        "text_color": "#ffffff",
-        "block_size": "small",
-        "title": "Your story",
+        "image_position": "left",
         "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
-        "button_label": "GET IN TOUCH",
-        "button_link": "shopify:\/\/pages\/contact",
-        "show_parallax": true
+        "link_text": "READ MORE",
+        "link_url": ""
       }
     }
   },
   "order": [
     "1657017468746ff033",
-    "1657017549fd0d893c",
     "main",
+    "16621092115c164cc0",
     "16570174446a32dc82",
-    "1657017501a449d11c",
-    "1657017457207ce0ca"
+    "1662109268563f465f"
   ]
 }
