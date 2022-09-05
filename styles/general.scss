@@ -122,4 +122,8 @@ h1, h2, h3, h4, h5{
   .heading_big{
     @include m__hl;
   }
+
+  .section_header{
+    padding: $gm*3 $gm !important;
+  }
 }

@@ -72,3 +72,17 @@
     }
   }
 }
+
+
+@media screen and (max-width: 640px) {
+  .featured_inspiration_container{
+    padding: 0 $gm;
+    width:100%;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .featured_inspiration_image_container{
+    width: 70%;
+    min-width: 70%;
+  }
+}

@@ -98,3 +98,41 @@
 .blog__footer{
   display: none;
 }
+
+
+@media screen and (max-width: 640px) {
+  .project_list{
+    .Container{
+      padding: 0;
+    }
+    .ArticleItem__Content{
+      margin: 0;
+      .ArticleItem__Title{
+        margin: $gm 0;
+      }
+      .Link--underline{
+        margin-top: 0;
+      }
+    }
+    .Grid{
+      margin: 0;
+    }
+    .ArticleListWrapper{
+      padding: 0;
+      overflow-x: scroll;
+      margin-bottom: 0;
+      max-width:100%;
+      .ArticleList{
+        grid-column-gap: $gm;
+        margin-bottom: 0;
+        padding: 0 $gm;
+        .Grid__Cell{
+          width:70vw;
+          &:last-child{
+            margin-right: $gm;
+          }
+        }
+      }
+    }
+  }
+}

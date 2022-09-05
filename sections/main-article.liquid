@@ -117,45 +117,75 @@
       <div class="project_image_grid">
 
         {% if article.metafields.custom.image_1 != blank %}
-        <div class="project_image_grid_card">
-            {{ article.metafields.custom.image_1 | img_url: "900x" | img_tag }}
-        </div>
+          {%- assign image_url_1 =  article.metafields.custom.image_1 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_1 }}" alt="">
+          </div>
         {% endif %}
+
         {% if article.metafields.custom.image_2 != blank %}
-        <div class="project_image_grid_card">
-            {{ article.metafields.custom.image_2 | img_url: "900x" | img_tag }}
-        </div>
+          {%- assign image_url_2 =  article.metafields.custom.image_2 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_2 }}" alt="">
+          </div>
         {% endif %}
+
         {% if article.metafields.custom.image_3 != blank %}
-        <div class="project_image_grid_card">
-            {{ article.metafields.custom.image_3 | img_url: "900x" | img_tag }}
-        </div>
+          {%- assign image_url_3 =  article.metafields.custom.image_3 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_3 }}" alt="">
+          </div>
         {% endif %}
+
         {% if article.metafields.custom.image_4 != blank %}
-        <div class="project_image_grid_card">
-            {{ article.metafields.custom.image_4 | img_url: "900x" | img_tag }}
-        </div>
+          {%- assign image_url_4 =  article.metafields.custom.image_4 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_4 }}" alt="">
+          </div>
         {% endif %}
+
         {% if article.metafields.custom.image_5 != blank %}
-        <div class="project_image_grid_card">
-            {{ article.metafields.custom.image_5 | img_url: "900x" | img_tag }}
-        </div>
+          {%- assign image_url_5 =  article.metafields.custom.image_5 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_5 }}" alt="">
+          </div>
         {% endif %}
+
         {% if article.metafields.custom.image_6 != blank %}
-        <div class="project_image_grid_card">
-            {{ article.metafields.custom.image_6 | img_url: "900x" | img_tag }}
-        </div>
+          {%- assign image_url_6 =  article.metafields.custom.image_6 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_6 }}" alt="">
+          </div>
         {% endif %}
+
         {% if article.metafields.custom.image_7 != blank %}
-        <div class="project_image_grid_card">
-            {{ article.metafields.custom.image_7 | img_url: "900x" | img_tag }}
-        </div>
+          {%- assign image_url_7 =  article.metafields.custom.image_7 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_7 }}" alt="">
+          </div>
         {% endif %}
+
         {% if article.metafields.custom.image_8 != blank %}
-        <div class="project_image_grid_card">
-            {{ article.metafields.custom.image_8 | img_url: "900x" | img_tag }}
-        </div>
+          {%- assign image_url_8 =  article.metafields.custom.image_8 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_8 }}" alt="">
+          </div>
         {% endif %}
+
+        {% if article.metafields.custom.image_9 != blank %}
+          {%- assign image_url_9 =  article.metafields.custom.image_9 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_9 }}" alt="">
+          </div>
+        {% endif %}
+
+        {% if article.metafields.custom.image_10 != blank %}
+          {%- assign image_url_10 =  article.metafields.custom.image_10 | img_url: '500x' -%}
+          <div class="project_image_grid_card">
+            <img class="Image--fadeIn Image--lazyLoad " data-src="{{ image_url_10 }}" alt="">
+          </div>
+        {% endif %}
+
 
       </div>
 

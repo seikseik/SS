@@ -90,3 +90,13 @@
     padding: 0;
   }
 }
+
+
+@media screen and (max-width: 640px){
+  .Header__Wrapper{
+    padding: 20px $gm !important;
+  }
+  .Header__LogoLink .Header__LogoImage{
+    max-width: 150px;
+  }
+}

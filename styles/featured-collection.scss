@@ -60,3 +60,10 @@
   min-width: unset;
   margin: 0 20px;
 }
+
+@media screen and (max-width: 640px) {
+  .CollectionItem{
+    width:70%;
+    margin: 0 10px;
+  }
+}

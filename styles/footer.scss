@@ -40,3 +40,25 @@
     }
   }
 }
+
+
+@media screen and (max-width: 640px) {
+  .footer_container_wrapper{
+    padding: 0 $gm;
+    flex-direction: column;
+  }
+  .footer_container{
+    flex-direction: column;
+  }
+  .footer_block{
+    width:100%;
+    margin-bottom: $gl;
+  }
+  .Footer__Aside{
+    text-align: left;
+    width:100%;
+    justify-content:flex-start;
+    align-items: flex-start;
+  }
+
+}
