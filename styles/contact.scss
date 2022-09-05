@@ -42,3 +42,12 @@
   border-bottom: 2px dotted black;
   margin-bottom: $gl*2;
 }
+
+
+@media screen and (max-width: 640px) {
+  .contact_container{
+    padding: $gl $gm;
+    min-height: unset;
+  }
+
+}

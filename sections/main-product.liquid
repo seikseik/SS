@@ -41,6 +41,46 @@
 
 <section class="Product Product--{{ section.settings.image_size }}" data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
   <div class="Product__Wrapper">
+
+
+    <div class="product_mobile_heading  hidden-desktop">
+      <h5 class="product_collection hidden-desktop">
+        {% for collection in product.collections %}
+          {% if collection.title contains "Home page" %}
+          {% else %}
+          {{collection.title}}
+          {% endif %}
+        {% endfor %}
+      </h5>
+      <h1 class="ProductMeta__Title Heading u-h2 hidden-desktop">
+        {%- if template.name == 'product' -%}
+          {{- product.title -}}
+        {%- else -%}
+          <a href="{{ product.url }}">{{ product.title }}</a>
+        {%- endif -%}
+      </h1>
+
+      <div class="ProductMeta__PriceList Heading hidden-desktop">
+        {%- if settings.currency_code_enabled -%}
+          {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+            <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
+            <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money_with_currency }}</span>
+          {%- else -%}
+            <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
+          {%- endif -%}
+        {%- else -%}
+          {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
+            <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money }}</span>
+            <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">{{ product.selected_or_first_available_variant.compare_at_price | money }}</span>
+          {%- else -%}
+            <span class="ProductMeta__Price Price Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money }}</span>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+
+    </div>
+
+
     {%- capture action_list_items -%}
       {%- if section.settings.enable_image_zoom -%}
         <div class="Product__ActionItem hidden-lap-and-up">

@@ -85,4 +85,41 @@
     width: 70%;
     min-width: 70%;
   }
+
+  .inspiration_section{
+    padding: 0 5px;
+    margin-top: 5px;
+  }
+  .inspiration_container{
+    border-width: 5px;
+    padding: 10px;
+    columns: 2 100px;
+  }
+
+  .inspiration_container{
+    column-gap: 10px;
+  }
+  .inspiration_container .inspiration_image_container{
+    margin: 0 10px 10px 0;
+  }
+
+  .page-Inspirations{
+    .PageHeader{
+      margin: $gl 0;
+    }
+  }
+  .SectionHeader__Heading{
+    font-size: 25px !important;
+  }
+
+  @for $i from 1 through 25 {
+    .inspiration_image_container:nth-child(#{$i}) {
+      $h: (random(180) + 100) + px;
+      height: $h !important;
+      line-height: $h !important;
+    }
+  }
+
+
+
 }

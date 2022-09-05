@@ -135,4 +135,25 @@
       }
     }
   }
+
+  .Blog{
+    .Container{
+      padding: 0 $gm;
+    }
+  }
+
+  .ArticleList_archive{
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+  }
+  .ArticleListWrapper_archive{
+    padding-bottom: $gl;
+  }
+
+  .ArticleItem__ImageWrapper{
+    margin-bottom: 0;
+  }
+
+
+
 }

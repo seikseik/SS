@@ -79,3 +79,41 @@
     max-width: 100%;
   }
 }
+
+
+@media screen and (max-width: 640px) {
+  .product_mobile_heading{
+    padding:  20px $gm;
+    .ProductMeta__Title{
+      line-height: 1;
+      margin-top: 5px;
+      font-size: $hlm !important;
+    }
+  }
+  .Product__Gallery{
+    .flickity-page-dots .dot{
+      border-color: black;
+    }
+  }
+
+  .Product__InfoWrapper{
+    .Container{
+      padding: 0 $gm;
+      .ProductMeta{
+        display: none;
+      }
+    }
+    .ProductMeta__Description{
+      margin-top: $gl;
+    }
+  }
+
+  .recent_prod_section{
+    margin-top: $gl*2;
+  }
+
+  .recent_prod_section .SectionHeader{
+    padding: 0 $gm !important;
+  }
+
+}

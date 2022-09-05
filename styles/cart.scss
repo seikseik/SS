@@ -45,3 +45,19 @@
     padding: 5px 10px;
   }
 }
+
+#sidebar-cart{
+  .Drawer__Header{
+    min-height: unset;
+    padding: 20px 15px !important;
+  }
+  .Drawer__Container{
+    padding: 0 $gm;
+  }
+  .CartItem{
+    margin-top: $gm;
+  }
+  .Cart .Drawer__Footer, .Cart__OffscreenNoteContainer{
+    padding: $gm;
+  }
+}

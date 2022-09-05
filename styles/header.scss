@@ -99,4 +99,34 @@
   .Header__LogoLink .Header__LogoImage{
     max-width: 150px;
   }
+
+  .Drawer--fromLeft{
+    transform: translateX(-100vw);
+  }
+  .SidebarMenu{
+    width:100vw;
+    .SidebarMenu__Nav{
+      width: fit-content;
+    }
+    .Drawer__Container{
+      padding: 0 $gm;
+      margin-top: $gl;
+    }
+    .Drawer__Header{
+      padding: 20px $gm;
+      min-height: unset;
+    }
+    .Collapsible__Button{
+      padding: $gm 0;
+    }
+    .Collapsible{
+      border: none;
+      margin-left: 0;
+      .Text--subdued {
+        padding: 5px 0;
+        font-size: $ts;
+      }
+    }
+  }
+
 }
