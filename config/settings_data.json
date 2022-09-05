@@ -15,11 +15,11 @@
     "footer_background": "#f0f0f0",
     "footer_heading_color": "#1c1b1b",
     "footer_text_color": "#1c1b1b",
-    "navigation_background": "#000000",
-    "navigation_text_color": "#ffffff",
+    "navigation_background": "#ffffff",
+    "navigation_text_color": "#000000",
     "newsletter_popup_background": "#f0f0f0",
     "newsletter_popup_text_color": "#ffffff",
-    "secondary_elements_background": "#000000",
+    "secondary_elements_background": "#ffffff",
     "secondary_elements_text_color": "#ffffff",
     "product_rating_color": "#ff224a",
     "heading_font": "montserrat_n5",
@@ -112,12 +112,14 @@
           "c2592b19-74a1-4fcc-abcf-ab3b517a4bac": {
             "type": "links",
             "settings": {
+              "menu_title": "Heading",
               "menu": "footer-main-menu"
             }
           },
           "52caf387-01a0-4f00-bb85-5870093945b7": {
             "type": "links",
             "settings": {
+              "menu_title": "Heading",
               "menu": "footer-service-menu"
             }
           },
