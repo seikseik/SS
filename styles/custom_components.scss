@@ -12,6 +12,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: $gl/2;
+  .about_image_wrapper{
+    background: $grey;
+    position: relative;
+    padding-bottom: 100%;
+    img{
+      position: absolute;
+      object-fit: cover;
+      height: 100%;
+      width:100%;
+    }
+  }
 }
 
 
@@ -51,6 +62,9 @@
       max-width: unset;
       margin: unset;
     }
+  }
+  .AspectRatio{
+    background: $grey;
   }
   .split_title{
     text-transform: uppercase;

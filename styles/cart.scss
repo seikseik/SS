@@ -48,8 +48,9 @@
 
 #sidebar-cart{
   .Drawer__Header{
-    min-height: unset;
     padding: 20px 15px !important;
+    min-height: unset;
+    max-height: unset;
   }
   .Drawer__Container{
     padding: 0 $gm;

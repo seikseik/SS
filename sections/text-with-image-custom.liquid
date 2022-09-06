@@ -43,13 +43,17 @@
       {%- if section.settings.image_two != blank -%}
         {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: section.settings.image_two -%}{%- endcapture -%}
         {%- assign image_url = section.settings.image_two | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-        <img class="Image--lazyLoad Image--slide Image--fadeIn" data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ section.settings.image_two.alt | escape }}">
+        <div class="about_image_wrapper">
+          <img class="Image--lazyLoad Image--slide Image--fadeIn" data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ section.settings.image_two.alt | escape }}">
+        </div>
       {%- endif -%}
 
       {%- if section.settings.image_three != blank -%}
         {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,600,700,800,900,1000,1200', image: section.settings.image_three -%}{%- endcapture -%}
         {%- assign image_url = section.settings.image_three | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-        <img class="Image--lazyLoad Image--slide Image--fadeIn" data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ section.settings.image_three.alt | escape }}">
+        <div class="about_image_wrapper">
+          <img class="Image--lazyLoad Image--slide Image--fadeIn" data-src="{{ image_url }}" data-expand="-200" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ section.settings.image_three.alt | escape }}">
+        </div>
         </div>
       {%- endif -%}
     </div>
