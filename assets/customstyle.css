@@ -80,6 +80,12 @@ h1, h2, h3, h4, h5 {
 .Button, .shopify-payment-button__button--unbranded, input.spr-button-primary, .spr-summary-actions-newreview, .spr-button-primary:not(input), .spr-pagination-prev > a, .spr-pagination-next > a {
   letter-spacing: normal;
   font-weight: normal;
+  line-height: 1;
+}
+
+.shopify-challenge__container .shopify-challenge__button {
+  border-color: black;
+  letter-spacing: normal;
 }
 
 .SectionHeader__Heading {
@@ -167,6 +173,17 @@ h1, h2, h3, h4, h5 {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.Search__Inner .ProductItem__Info {
+  flex-direction: column;
+  align-items: center;
+}
+.Search__Inner .ProductItem__Info .price_spacing {
+  display: none;
+}
+.Search__Inner .ProductItem__Info .product_title, .Search__Inner .ProductItem__Info .product_price {
+  font-size: 14px;
 }
 
 .desktop {
@@ -724,6 +741,7 @@ h1, h2, h3, h4, h5 {
   .contact_container {
     padding: 30px 15px;
     min-height: unset;
+    height: auto;
   }
 }
 .project_list {
@@ -894,104 +912,104 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 .inspiration_container .inspiration_image_container:nth-child(1) {
-  height: 406px;
-  line-height: 406px;
+  height: 265px;
+  line-height: 265px;
 }
 .inspiration_container .inspiration_image_container:nth-child(2) {
-  height: 445px;
-  line-height: 445px;
-}
-.inspiration_container .inspiration_image_container:nth-child(3) {
-  height: 431px;
-  line-height: 431px;
-}
-.inspiration_container .inspiration_image_container:nth-child(4) {
-  height: 164px;
-  line-height: 164px;
-}
-.inspiration_container .inspiration_image_container:nth-child(5) {
-  height: 493px;
-  line-height: 493px;
-}
-.inspiration_container .inspiration_image_container:nth-child(6) {
-  height: 133px;
-  line-height: 133px;
-}
-.inspiration_container .inspiration_image_container:nth-child(7) {
-  height: 154px;
-  line-height: 154px;
-}
-.inspiration_container .inspiration_image_container:nth-child(8) {
-  height: 220px;
-  line-height: 220px;
-}
-.inspiration_container .inspiration_image_container:nth-child(9) {
-  height: 198px;
-  line-height: 198px;
-}
-.inspiration_container .inspiration_image_container:nth-child(10) {
-  height: 109px;
-  line-height: 109px;
-}
-.inspiration_container .inspiration_image_container:nth-child(11) {
   height: 479px;
   line-height: 479px;
 }
+.inspiration_container .inspiration_image_container:nth-child(3) {
+  height: 489px;
+  line-height: 489px;
+}
+.inspiration_container .inspiration_image_container:nth-child(4) {
+  height: 112px;
+  line-height: 112px;
+}
+.inspiration_container .inspiration_image_container:nth-child(5) {
+  height: 193px;
+  line-height: 193px;
+}
+.inspiration_container .inspiration_image_container:nth-child(6) {
+  height: 340px;
+  line-height: 340px;
+}
+.inspiration_container .inspiration_image_container:nth-child(7) {
+  height: 141px;
+  line-height: 141px;
+}
+.inspiration_container .inspiration_image_container:nth-child(8) {
+  height: 395px;
+  line-height: 395px;
+}
+.inspiration_container .inspiration_image_container:nth-child(9) {
+  height: 137px;
+  line-height: 137px;
+}
+.inspiration_container .inspiration_image_container:nth-child(10) {
+  height: 189px;
+  line-height: 189px;
+}
+.inspiration_container .inspiration_image_container:nth-child(11) {
+  height: 174px;
+  line-height: 174px;
+}
 .inspiration_container .inspiration_image_container:nth-child(12) {
-  height: 150px;
-  line-height: 150px;
+  height: 201px;
+  line-height: 201px;
 }
 .inspiration_container .inspiration_image_container:nth-child(13) {
-  height: 257px;
-  line-height: 257px;
+  height: 406px;
+  line-height: 406px;
 }
 .inspiration_container .inspiration_image_container:nth-child(14) {
-  height: 391px;
-  line-height: 391px;
+  height: 256px;
+  line-height: 256px;
 }
 .inspiration_container .inspiration_image_container:nth-child(15) {
-  height: 191px;
-  line-height: 191px;
+  height: 101px;
+  line-height: 101px;
 }
 .inspiration_container .inspiration_image_container:nth-child(16) {
+  height: 332px;
+  line-height: 332px;
+}
+.inspiration_container .inspiration_image_container:nth-child(17) {
+  height: 459px;
+  line-height: 459px;
+}
+.inspiration_container .inspiration_image_container:nth-child(18) {
+  height: 423px;
+  line-height: 423px;
+}
+.inspiration_container .inspiration_image_container:nth-child(19) {
+  height: 376px;
+  line-height: 376px;
+}
+.inspiration_container .inspiration_image_container:nth-child(20) {
+  height: 246px;
+  line-height: 246px;
+}
+.inspiration_container .inspiration_image_container:nth-child(21) {
+  height: 256px;
+  line-height: 256px;
+}
+.inspiration_container .inspiration_image_container:nth-child(22) {
   height: 457px;
   line-height: 457px;
 }
-.inspiration_container .inspiration_image_container:nth-child(17) {
-  height: 369px;
-  line-height: 369px;
-}
-.inspiration_container .inspiration_image_container:nth-child(18) {
-  height: 166px;
-  line-height: 166px;
-}
-.inspiration_container .inspiration_image_container:nth-child(19) {
-  height: 441px;
-  line-height: 441px;
-}
-.inspiration_container .inspiration_image_container:nth-child(20) {
-  height: 453px;
-  line-height: 453px;
-}
-.inspiration_container .inspiration_image_container:nth-child(21) {
-  height: 272px;
-  line-height: 272px;
-}
-.inspiration_container .inspiration_image_container:nth-child(22) {
-  height: 476px;
-  line-height: 476px;
-}
 .inspiration_container .inspiration_image_container:nth-child(23) {
-  height: 260px;
-  line-height: 260px;
+  height: 319px;
+  line-height: 319px;
 }
 .inspiration_container .inspiration_image_container:nth-child(24) {
-  height: 401px;
-  line-height: 401px;
+  height: 474px;
+  line-height: 474px;
 }
 .inspiration_container .inspiration_image_container:nth-child(25) {
-  height: 125px;
-  line-height: 125px;
+  height: 194px;
+  line-height: 194px;
 }
 
 .inspiration_section {
@@ -1079,128 +1097,128 @@ h1, h2, h3, h4, h5 {
   }
 
   .inspiration_image_container:nth-child(1) {
-    height: 218px !important;
-    line-height: 218px !important;
+    height: 146px !important;
+    line-height: 146px !important;
   }
 
   .inspiration_image_container:nth-child(2) {
-    height: 104px !important;
-    line-height: 104px !important;
+    height: 214px !important;
+    line-height: 214px !important;
   }
 
   .inspiration_image_container:nth-child(3) {
-    height: 145px !important;
-    line-height: 145px !important;
+    height: 185px !important;
+    line-height: 185px !important;
   }
 
   .inspiration_image_container:nth-child(4) {
-    height: 245px !important;
-    line-height: 245px !important;
+    height: 141px !important;
+    line-height: 141px !important;
   }
 
   .inspiration_image_container:nth-child(5) {
-    height: 221px !important;
-    line-height: 221px !important;
+    height: 210px !important;
+    line-height: 210px !important;
   }
 
   .inspiration_image_container:nth-child(6) {
-    height: 192px !important;
-    line-height: 192px !important;
+    height: 123px !important;
+    line-height: 123px !important;
   }
 
   .inspiration_image_container:nth-child(7) {
-    height: 237px !important;
-    line-height: 237px !important;
+    height: 203px !important;
+    line-height: 203px !important;
   }
 
   .inspiration_image_container:nth-child(8) {
-    height: 201px !important;
-    line-height: 201px !important;
+    height: 170px !important;
+    line-height: 170px !important;
   }
 
   .inspiration_image_container:nth-child(9) {
-    height: 173px !important;
-    line-height: 173px !important;
-  }
-
-  .inspiration_image_container:nth-child(10) {
-    height: 189px !important;
-    line-height: 189px !important;
-  }
-
-  .inspiration_image_container:nth-child(11) {
-    height: 133px !important;
-    line-height: 133px !important;
-  }
-
-  .inspiration_image_container:nth-child(12) {
-    height: 243px !important;
-    line-height: 243px !important;
-  }
-
-  .inspiration_image_container:nth-child(13) {
-    height: 115px !important;
-    line-height: 115px !important;
-  }
-
-  .inspiration_image_container:nth-child(14) {
-    height: 104px !important;
-    line-height: 104px !important;
-  }
-
-  .inspiration_image_container:nth-child(15) {
-    height: 229px !important;
-    line-height: 229px !important;
-  }
-
-  .inspiration_image_container:nth-child(16) {
-    height: 126px !important;
-    line-height: 126px !important;
-  }
-
-  .inspiration_image_container:nth-child(17) {
-    height: 229px !important;
-    line-height: 229px !important;
-  }
-
-  .inspiration_image_container:nth-child(18) {
-    height: 109px !important;
-    line-height: 109px !important;
-  }
-
-  .inspiration_image_container:nth-child(19) {
-    height: 195px !important;
-    line-height: 195px !important;
-  }
-
-  .inspiration_image_container:nth-child(20) {
-    height: 197px !important;
-    line-height: 197px !important;
-  }
-
-  .inspiration_image_container:nth-child(21) {
-    height: 206px !important;
-    line-height: 206px !important;
-  }
-
-  .inspiration_image_container:nth-child(22) {
-    height: 143px !important;
-    line-height: 143px !important;
-  }
-
-  .inspiration_image_container:nth-child(23) {
     height: 178px !important;
     line-height: 178px !important;
   }
 
+  .inspiration_image_container:nth-child(10) {
+    height: 191px !important;
+    line-height: 191px !important;
+  }
+
+  .inspiration_image_container:nth-child(11) {
+    height: 199px !important;
+    line-height: 199px !important;
+  }
+
+  .inspiration_image_container:nth-child(12) {
+    height: 180px !important;
+    line-height: 180px !important;
+  }
+
+  .inspiration_image_container:nth-child(13) {
+    height: 124px !important;
+    line-height: 124px !important;
+  }
+
+  .inspiration_image_container:nth-child(14) {
+    height: 118px !important;
+    line-height: 118px !important;
+  }
+
+  .inspiration_image_container:nth-child(15) {
+    height: 138px !important;
+    line-height: 138px !important;
+  }
+
+  .inspiration_image_container:nth-child(16) {
+    height: 162px !important;
+    line-height: 162px !important;
+  }
+
+  .inspiration_image_container:nth-child(17) {
+    height: 149px !important;
+    line-height: 149px !important;
+  }
+
+  .inspiration_image_container:nth-child(18) {
+    height: 268px !important;
+    line-height: 268px !important;
+  }
+
+  .inspiration_image_container:nth-child(19) {
+    height: 202px !important;
+    line-height: 202px !important;
+  }
+
+  .inspiration_image_container:nth-child(20) {
+    height: 157px !important;
+    line-height: 157px !important;
+  }
+
+  .inspiration_image_container:nth-child(21) {
+    height: 256px !important;
+    line-height: 256px !important;
+  }
+
+  .inspiration_image_container:nth-child(22) {
+    height: 223px !important;
+    line-height: 223px !important;
+  }
+
+  .inspiration_image_container:nth-child(23) {
+    height: 274px !important;
+    line-height: 274px !important;
+  }
+
   .inspiration_image_container:nth-child(24) {
-    height: 231px !important;
-    line-height: 231px !important;
+    height: 181px !important;
+    line-height: 181px !important;
   }
 
   .inspiration_image_container:nth-child(25) {
-    height: 195px !important;
-    line-height: 195px !important;
+    height: 211px !important;
+    line-height: 211px !important;
   }
 }
 .about_image_section {
@@ -1324,6 +1342,17 @@ h1, h2, h3, h4, h5 {
 }
 .press_container .press_image {
   width: 100%;
+}
+.press_container .press_image_wrapper {
+  background: #F3F3F3;
+  position: relative;
+  padding-bottom: 100%;
+}
+.press_container .press_image_wrapper img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .press_image_dida {

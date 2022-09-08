@@ -43,8 +43,8 @@
   <div class="Product__Wrapper">
 
 
-    <div class="product_mobile_heading  hidden-desktop">
-      <h5 class="product_collection hidden-desktop">
+    <div class="product_mobile_heading  hidden-desk">
+      <h5 class="product_collection hidden-desk">
         {% for collection in product.collections %}
           {% if collection.title contains "Home page" %}
           {% else %}
@@ -52,7 +52,7 @@
           {% endif %}
         {% endfor %}
       </h5>
-      <h1 class="ProductMeta__Title Heading u-h2 hidden-desktop">
+      <h1 class="ProductMeta__Title Heading u-h2 hidden-desk">
         {%- if template.name == 'product' -%}
           {{- product.title -}}
         {%- else -%}
@@ -60,7 +60,7 @@
         {%- endif -%}
       </h1>
 
-      <div class="ProductMeta__PriceList Heading hidden-desktop">
+      <div class="ProductMeta__PriceList Heading hidden-desk">
         {%- if settings.currency_code_enabled -%}
           {%- if product.selected_or_first_available_variant.compare_at_price > product.selected_or_first_available_variant.price -%}
             <span class="ProductMeta__Price Price Price--highlight Text--subdued u-h4">{{ product.selected_or_first_available_variant.price | money_with_currency }}</span>
