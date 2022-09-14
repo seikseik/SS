@@ -174,6 +174,67 @@
 }
 
 
+// cornice slideshow
+
+  .cornice_slideshow_container{
+    width:80%;
+    height: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 10%;
+    top:10%;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .cornice_slideshow_wrapper{
+    position: relative;
+    width:100%;
+    height: 100%;
+  }
+  .cornice_slideshow_top{
+    position:  absolute;
+    background: #F7E1D1;
+    width:100%;
+    top:0;
+    left: 0;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 5L0 0H8L12 5L8 10H0L4 5Z' fill='black'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+  }
+  .cornice_slideshow_right{
+    position:  absolute;
+    background: #F7E1D1;
+    width:10px;
+    top:0;
+    right: 0;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='16' viewBox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 4L10 0L10 8L5 12L-3.49691e-07 8L0 -4.37114e-07L5 4Z' fill='black'/%3E%3C/svg%3E ");
+    background-size: contain;
+  }
+  .cornice_slideshow_bottom{
+    position:  absolute;
+    background: #F7E1D1;
+    width:100%;
+    bottom:0;
+    left: 0;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 5L16 10L8 10L4 5L8 -6.99382e-07L16 0L12 5Z' fill='black'/%3E%3C/svg%3E ");
+    background-size: contain;
+  }
+  .cornice_slideshow_left{
+    position:  absolute;
+    background: #F7E1D1;
+    width:10px;
+    top:0;
+    left: 0;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='16' viewBox='0 0 10 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 12L0 16L-3.49691e-07 8L5 4L10 8L10 16L5 12Z' fill='black'/%3E%3C/svg%3E ");
+    background-size: contain;
+  }
+
+
+
 // split
 .section_color_split{
   padding: $gl*3 $gl;
@@ -250,6 +311,14 @@
 
 
 @media screen and (max-width: 640px) {
+
+
+  .cornice_slideshow_container{
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+  }
 
   .about_image_section{
     padding: $gm $gm;

@@ -93,6 +93,24 @@
 }
 
 
+
+@media screen and (min-width: 641px){
+  .Drawer--fromLeft .Drawer__Container, .Drawer--fromRight .Drawer__Container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .Drawer__Close{
+    left: 20px;
+  }
+  .Collapsible{
+    border-bottom: 0;
+  }
+  .Collapsible .Collapsible{
+    margin-left: 0;
+  }
+}
+
+
 @media screen and (max-width: 640px){
   .Header__Wrapper{
     padding: 20px $gm !important;

@@ -13,6 +13,17 @@
 
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="slideshow">
   <div class="Slideshow {% if section.settings.show_fullscreen %}Slideshow--fullscreen{% endif %}">
+
+    <div class="cornice_slideshow_container">
+      <div class="cornice_slideshow_wrapper">
+        <div class="cornice_slideshow_top"></div>
+        <div class="cornice_slideshow_right"></div>
+        <div class="cornice_slideshow_bottom"></div>
+        <div class="cornice_slideshow_left"></div>
+      </div>
+    </div>
+
+
     <div class="Slideshow__Carousel {% if section.settings.show_arrow %}Slideshow__Carousel--withScrollButton{% endif %} Carousel Carousel--fadeIn {% if section.settings.show_fullscreen %}Carousel--fixed{% endif %} Carousel--insideDots"
          data-flickity-config='{{ flickity_options }}'>
       {%- for block in section.blocks -%}

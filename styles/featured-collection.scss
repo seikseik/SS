@@ -7,6 +7,13 @@
 .flickity-page-dots .dot{
   border: 1px solid white;
 }
+.TestimonialList{
+  .flickity-page-dots .dot.is-selected{
+    background: white;
+    outline: 1px solid white;
+    border-color: #007167;
+  }
+}
 
 .collectionListCarousel{
   max-width: 100%;
@@ -18,6 +25,8 @@
   }
   .flickity-page-dots .dot.is-selected{
     background: black;
+    outline: 1px solid black;
+    border-color: white;
   }
   .flickity-page-dots{
     margin-top: $gl*2;

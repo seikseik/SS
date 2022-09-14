@@ -40,7 +40,12 @@
   padding: $gl 0;
   padding-top: 0;
   border-bottom: 2px dotted black;
-  margin-bottom: $gl*2;
+  margin-bottom: 40px;
+  .contact_row{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $gl/3;
+  }
 }
 
 
