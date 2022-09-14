@@ -27,3 +27,19 @@
   height: 16px;
   border-width: 1px;
 }
+
+.Slideshow{
+  .flickity-page-dots{
+    width:100%;
+    left: 0;
+    bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .Slideshow{
+    .flickity-page-dots{
+      bottom: 15%;
+    }
+  }
+}
