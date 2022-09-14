@@ -38,7 +38,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/big_ISIL_GUN_AW21_IIDA_HOUSE5718_copia.jpg",
+            "image": "shopify:\/\/shop_images\/Screenshot_2021-05-26_at_10.23.20.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -52,7 +52,7 @@
           "type": "collection",
           "settings": {
             "collection": "",
-            "image": "shopify:\/\/shop_images\/big_ISIL_GUN_AW21_IIDA_HOUSE5718_copia.jpg",
+            "image": "shopify:\/\/shop_images\/sku2214_ss_calypso_560x840px_base-image.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -66,6 +66,7 @@
           "type": "collection",
           "settings": {
             "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/sku2035_ss_key-shadow_560x840px_base-image.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -79,6 +80,7 @@
           "type": "collection",
           "settings": {
             "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/sku4577_ss_parisio_560x840px_base-image.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
@@ -92,6 +94,7 @@
           "type": "collection",
           "settings": {
             "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/sku2214_ss_calypso_560x840px_base-image.jpg",
             "image_alignment": "center center",
             "content_position": "bottomLeft",
             "subheading": "Sub-heading",
