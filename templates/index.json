@@ -16,10 +16,25 @@
             "button_2_text": "",
             "button_2_link": ""
           }
+        },
+        "bdf2d124-d801-43ab-81f7-c60757f27913": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16-04-NUVO-Magazine-Winter-2013-fyi_page_11_image_0002.jpg",
+            "apply_overlay": true,
+            "content_position": "middleCenter",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
         }
       },
       "block_order": [
-        "slide-1"
+        "slide-1",
+        "bdf2d124-d801-43ab-81f7-c60757f27913"
       ],
       "settings": {
         "show_fullscreen": true,
