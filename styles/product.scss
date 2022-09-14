@@ -20,7 +20,7 @@
 .ProductForm__AddToCart{
   font-family: 'Klar semibold';
   text-transform: uppercase;
-  padding: $gl/2 $gl;
+  padding: $gl/3 $gl;
   background: black;
   border:1px solid black;
   background: white;
@@ -77,6 +77,34 @@
     padding: 0 30px;
     width: 1200px;
     max-width: 100%;
+  }
+}
+
+
+// custom product
+.discover_more{
+  text-align: center;
+  margin-top: $gl/2;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  background: black;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  font-size: 14px;
+  transition: none;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  &:hover{
+    background: white;
+    color: black;
+  }
+}
+
+.custom_product{
+  .ProductForm__QuantitySelector{
+    display: none !important;
   }
 }
 
