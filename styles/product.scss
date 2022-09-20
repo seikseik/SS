@@ -39,7 +39,7 @@
   font-size: $ts;
 }
 .ProductForm__Variants label{
-  font-size: $ts;
+  font-size: $txs;
 }
 .ProductMeta__Price{font-size: $ts !important;}
 .ProductMeta__Description{
@@ -47,7 +47,7 @@
     font-size: $ts;
   }
 }
-.ProductForm__Label{font-size: $ts;}
+.ProductForm__Label{font-size: $txs;}
 .ProductForm__BuyButtons button{
   font-family: $sansL;
 }
@@ -108,6 +108,11 @@
   }
 }
 
+.ProductForm__QuantitySelector{
+  .ProductForm__Label{
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (max-width: 640px) {
   .product_mobile_heading{

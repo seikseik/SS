@@ -94,6 +94,13 @@
 
 
 
+@media (min-width: 1008px) and (max-width: 1139px) {
+  .hidden-between{
+    display: none;
+  }
+}
+
+
 @media screen and (min-width: 641px){
   .Drawer--fromLeft .Drawer__Container, .Drawer--fromRight .Drawer__Container {
     padding-left: 20px;

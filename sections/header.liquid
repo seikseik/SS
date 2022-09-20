@@ -162,7 +162,7 @@ HEADER CONTENT
         data-section-settings='{{ section_settings }}'
         role="banner">
   <div class="Header__Wrapper">
-    <div class="Header__FlexItem Header__FlexItem--fill hidden-phone hidden-tablet">
+    <div class="Header__FlexItem Header__FlexItem--fill hidden-phone hidden-tablet hidden-between">
 
       {%- comment -%}
       --------------------------------------------------------------------------------------------------------------------
@@ -427,12 +427,12 @@ HEADER CONTENT
       {%- endunless -%}
 
       {%- if shop.customer_accounts_enabled and section.settings.show_icons or use_sidebar_menu -%}
-        <a href="{{ routes.account_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable">
+        <a href="{{ routes.account_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable  hidden-phone">
           {%- render 'icon' with 'account' -%}
         </a>
       {%- endif -%}
 
-      <a href="{{ routes.search_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless section.settings.show_icons or use_sidebar_menu %}hidden-desk{% endunless %} hidden-phone" data-action="toggle-search" aria-label="{{ 'header.navigation.search' | t }}">
+      <a href="{{ routes.search_url }}" class="Header__Icon Icon-Wrapper Icon-Wrapper--clickable {% unless section.settings.show_icons or use_sidebar_menu %}hidden-desk{% endunless %}" data-action="toggle-search" aria-label="{{ 'header.navigation.search' | t }}">
         <span class="hidden-tablet-and-up">{%- render 'icon' with 'search' -%}</span>
         <span class="hidden-phone">{%- render 'icon' with 'search-desktop' -%}</span>
       </a>

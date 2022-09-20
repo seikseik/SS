@@ -304,6 +304,11 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
+@media (min-width: 1008px) and (max-width: 1139px) {
+  .hidden-between {
+    display: none;
+  }
+}
 @media screen and (min-width: 641px) {
   .Drawer--fromLeft .Drawer__Container, .Drawer--fromRight .Drawer__Container {
     padding-left: 20px;
@@ -510,7 +515,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .ProductForm__Variants label {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .ProductMeta__Price {
@@ -522,7 +527,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .ProductForm__Label {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .ProductForm__BuyButtons button {
@@ -577,6 +582,10 @@ h1, h2, h3, h4, h5 {
 
 .custom_product .ProductForm__QuantitySelector {
   display: none !important;
+}
+
+.ProductForm__QuantitySelector .ProductForm__Label {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 640px) {
@@ -983,104 +992,104 @@ h1, h2, h3, h4, h5 {
   width: 100%;
 }
 .inspiration_container .inspiration_image_container:nth-child(1) {
-  height: 259px;
-  line-height: 259px;
+  height: 196px;
+  line-height: 196px;
 }
 .inspiration_container .inspiration_image_container:nth-child(2) {
-  height: 124px;
-  line-height: 124px;
+  height: 444px;
+  line-height: 444px;
 }
 .inspiration_container .inspiration_image_container:nth-child(3) {
-  height: 377px;
-  line-height: 377px;
+  height: 267px;
+  line-height: 267px;
 }
 .inspiration_container .inspiration_image_container:nth-child(4) {
-  height: 131px;
-  line-height: 131px;
+  height: 128px;
+  line-height: 128px;
 }
 .inspiration_container .inspiration_image_container:nth-child(5) {
-  height: 399px;
-  line-height: 399px;
+  height: 128px;
+  line-height: 128px;
 }
 .inspiration_container .inspiration_image_container:nth-child(6) {
-  height: 328px;
-  line-height: 328px;
+  height: 426px;
+  line-height: 426px;
 }
 .inspiration_container .inspiration_image_container:nth-child(7) {
-  height: 140px;
-  line-height: 140px;
+  height: 291px;
+  line-height: 291px;
 }
 .inspiration_container .inspiration_image_container:nth-child(8) {
-  height: 213px;
-  line-height: 213px;
+  height: 249px;
+  line-height: 249px;
 }
 .inspiration_container .inspiration_image_container:nth-child(9) {
-  height: 228px;
-  line-height: 228px;
+  height: 269px;
+  line-height: 269px;
 }
 .inspiration_container .inspiration_image_container:nth-child(10) {
-  height: 207px;
-  line-height: 207px;
+  height: 169px;
+  line-height: 169px;
 }
 .inspiration_container .inspiration_image_container:nth-child(11) {
-  height: 486px;
-  line-height: 486px;
+  height: 457px;
+  line-height: 457px;
 }
 .inspiration_container .inspiration_image_container:nth-child(12) {
-  height: 226px;
-  line-height: 226px;
+  height: 496px;
+  line-height: 496px;
 }
 .inspiration_container .inspiration_image_container:nth-child(13) {
-  height: 177px;
-  line-height: 177px;
+  height: 208px;
+  line-height: 208px;
 }
 .inspiration_container .inspiration_image_container:nth-child(14) {
-  height: 245px;
-  line-height: 245px;
+  height: 449px;
+  line-height: 449px;
 }
 .inspiration_container .inspiration_image_container:nth-child(15) {
-  height: 365px;
-  line-height: 365px;
+  height: 101px;
+  line-height: 101px;
 }
 .inspiration_container .inspiration_image_container:nth-child(16) {
-  height: 474px;
-  line-height: 474px;
+  height: 471px;
+  line-height: 471px;
 }
 .inspiration_container .inspiration_image_container:nth-child(17) {
-  height: 271px;
-  line-height: 271px;
+  height: 215px;
+  line-height: 215px;
 }
 .inspiration_container .inspiration_image_container:nth-child(18) {
-  height: 337px;
-  line-height: 337px;
+  height: 276px;
+  line-height: 276px;
 }
 .inspiration_container .inspiration_image_container:nth-child(19) {
-  height: 377px;
-  line-height: 377px;
+  height: 146px;
+  line-height: 146px;
 }
 .inspiration_container .inspiration_image_container:nth-child(20) {
-  height: 460px;
-  line-height: 460px;
+  height: 265px;
+  line-height: 265px;
 }
 .inspiration_container .inspiration_image_container:nth-child(21) {
-  height: 311px;
-  line-height: 311px;
+  height: 434px;
+  line-height: 434px;
 }
 .inspiration_container .inspiration_image_container:nth-child(22) {
-  height: 319px;
-  line-height: 319px;
+  height: 472px;
+  line-height: 472px;
 }
 .inspiration_container .inspiration_image_container:nth-child(23) {
-  height: 157px;
-  line-height: 157px;
+  height: 110px;
+  line-height: 110px;
 }
 .inspiration_container .inspiration_image_container:nth-child(24) {
-  height: 247px;
-  line-height: 247px;
+  height: 327px;
+  line-height: 327px;
 }
 .inspiration_container .inspiration_image_container:nth-child(25) {
-  height: 242px;
-  line-height: 242px;
+  height: 116px;
+  line-height: 116px;
 }
 
 .inspiration_section {
@@ -1168,128 +1177,128 @@ h1, h2, h3, h4, h5 {
   }
 
   .inspiration_image_container:nth-child(1) {
-    height: 264px !important;
-    line-height: 264px !important;
+    height: 258px !important;
+    line-height: 258px !important;
   }
 
   .inspiration_image_container:nth-child(2) {
-    height: 210px !important;
-    line-height: 210px !important;
+    height: 228px !important;
+    line-height: 228px !important;
   }
 
   .inspiration_image_container:nth-child(3) {
-    height: 196px !important;
-    line-height: 196px !important;
+    height: 271px !important;
+    line-height: 271px !important;
   }
 
   .inspiration_image_container:nth-child(4) {
-    height: 240px !important;
-    line-height: 240px !important;
+    height: 275px !important;
+    line-height: 275px !important;
   }
 
   .inspiration_image_container:nth-child(5) {
-    height: 257px !important;
-    line-height: 257px !important;
-  }
-
-  .inspiration_image_container:nth-child(6) {
-    height: 234px !important;
-    line-height: 234px !important;
-  }
-
-  .inspiration_image_container:nth-child(7) {
-    height: 133px !important;
-    line-height: 133px !important;
-  }
-
-  .inspiration_image_container:nth-child(8) {
-    height: 241px !important;
-    line-height: 241px !important;
-  }
-
-  .inspiration_image_container:nth-child(9) {
-    height: 165px !important;
-    line-height: 165px !important;
-  }
-
-  .inspiration_image_container:nth-child(10) {
-    height: 149px !important;
-    line-height: 149px !important;
-  }
-
-  .inspiration_image_container:nth-child(11) {
-    height: 129px !important;
-    line-height: 129px !important;
-  }
-
-  .inspiration_image_container:nth-child(12) {
-    height: 210px !important;
-    line-height: 210px !important;
-  }
-
-  .inspiration_image_container:nth-child(13) {
-    height: 261px !important;
-    line-height: 261px !important;
-  }
-
-  .inspiration_image_container:nth-child(14) {
-    height: 160px !important;
-    line-height: 160px !important;
-  }
-
-  .inspiration_image_container:nth-child(15) {
-    height: 236px !important;
-    line-height: 236px !important;
-  }
-
-  .inspiration_image_container:nth-child(16) {
-    height: 122px !important;
-    line-height: 122px !important;
-  }
-
-  .inspiration_image_container:nth-child(17) {
-    height: 179px !important;
-    line-height: 179px !important;
-  }
-
-  .inspiration_image_container:nth-child(18) {
-    height: 185px !important;
-    line-height: 185px !important;
-  }
-
-  .inspiration_image_container:nth-child(19) {
-    height: 207px !important;
-    line-height: 207px !important;
-  }
-
-  .inspiration_image_container:nth-child(20) {
-    height: 133px !important;
-    line-height: 133px !important;
-  }
-
-  .inspiration_image_container:nth-child(21) {
-    height: 267px !important;
-    line-height: 267px !important;
-  }
-
-  .inspiration_image_container:nth-child(22) {
-    height: 194px !important;
-    line-height: 194px !important;
-  }
-
-  .inspiration_image_container:nth-child(23) {
     height: 206px !important;
     line-height: 206px !important;
   }
 
+  .inspiration_image_container:nth-child(6) {
+    height: 229px !important;
+    line-height: 229px !important;
+  }
+
+  .inspiration_image_container:nth-child(7) {
+    height: 242px !important;
+    line-height: 242px !important;
+  }
+
+  .inspiration_image_container:nth-child(8) {
+    height: 136px !important;
+    line-height: 136px !important;
+  }
+
+  .inspiration_image_container:nth-child(9) {
+    height: 274px !important;
+    line-height: 274px !important;
+  }
+
+  .inspiration_image_container:nth-child(10) {
+    height: 156px !important;
+    line-height: 156px !important;
+  }
+
+  .inspiration_image_container:nth-child(11) {
+    height: 174px !important;
+    line-height: 174px !important;
+  }
+
+  .inspiration_image_container:nth-child(12) {
+    height: 262px !important;
+    line-height: 262px !important;
+  }
+
+  .inspiration_image_container:nth-child(13) {
+    height: 118px !important;
+    line-height: 118px !important;
+  }
+
+  .inspiration_image_container:nth-child(14) {
+    height: 174px !important;
+    line-height: 174px !important;
+  }
+
+  .inspiration_image_container:nth-child(15) {
+    height: 191px !important;
+    line-height: 191px !important;
+  }
+
+  .inspiration_image_container:nth-child(16) {
+    height: 167px !important;
+    line-height: 167px !important;
+  }
+
+  .inspiration_image_container:nth-child(17) {
+    height: 254px !important;
+    line-height: 254px !important;
+  }
+
+  .inspiration_image_container:nth-child(18) {
+    height: 183px !important;
+    line-height: 183px !important;
+  }
+
+  .inspiration_image_container:nth-child(19) {
+    height: 131px !important;
+    line-height: 131px !important;
+  }
+
+  .inspiration_image_container:nth-child(20) {
+    height: 116px !important;
+    line-height: 116px !important;
+  }
+
+  .inspiration_image_container:nth-child(21) {
+    height: 202px !important;
+    line-height: 202px !important;
+  }
+
+  .inspiration_image_container:nth-child(22) {
+    height: 134px !important;
+    line-height: 134px !important;
+  }
+
+  .inspiration_image_container:nth-child(23) {
+    height: 139px !important;
+    line-height: 139px !important;
+  }
+
   .inspiration_image_container:nth-child(24) {
-    height: 280px !important;
-    line-height: 280px !important;
+    height: 101px !important;
+    line-height: 101px !important;
   }
 
   .inspiration_image_container:nth-child(25) {
-    height: 101px !important;
-    line-height: 101px !important;
+    height: 118px !important;
+    line-height: 118px !important;
   }
 }
 .about_image_section {
